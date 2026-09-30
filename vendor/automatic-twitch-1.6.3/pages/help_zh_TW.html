@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+  <head>
+    <meta charset="UTF-8" />
+    <title class="notranslate" data-i18n>extension_title+—+title_help</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="/pages/help.css" />
+    <script type="text/javascript" src="/js/deps/not-jquery-noajax.min.js"></script>
+    <script type="text/javascript" src="/js/deps/ext-storage-manager.min.js"></script>
+    <script type="text/javascript" src="/pages/help.js"></script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=initTranslate"
+      defer
+    ></script>
+  </head>
+
+  <body class="wrapper" id="wrapper">
+    <header>
+      <div class="header-wrapper notranslate">
+        <h1 class="title">幫助</h1>
+        <div class="ext-title">
+          <div data-i18n>extension_title</div>
+          <div
+            class="balloon balloon_tooltip balloon_right ml hidden"
+            id="translateGoogle"
+            data-balloon
+            data-balloon-tooltip
+          >
+            <button class="translate-google" id="translateGoogleBtn"></button>
+            <div class="balloon__content" data-balloon-content>
+              <div class="balloon__text" id="translateGoogleHint"></div>
+              <button class="balloon__close" data-balloon-action></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="menu__content" id="menuContent">
+        <button class="menu__toggler" id="menuContentToggler" aria-label="Toggle table of contents"></button>
+      </div>
+    </div>
+
+    <aside id="aside">
+      <nav id="nav">
+        <a class="heading-link heading-link_basics" href="#basics">基本介紹</a>
+        <a class="heading-link heading-link_alerts" href="#alerts">提醒</a>
+        <a class="heading-link heading-link_history" href="#history">領取紀錄</a>
+        <a class="heading-link heading-link_settings" href="#settings">設定</a>
+        <a class="heading-link heading-link_drops" href="#drops">掉寶</a>
+        <a class="heading-link heading-link_moments" href="#moments">重要時刻</a>
+        <a class="heading-link heading-link_points" href="#points">忠誠點數</a>
+        <a class="heading-link heading-link_events" href="#events">事件</a>
+        <a class="heading-link heading-link_errors" href="#errors">關於錯誤的詳細資訊</a>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <section>
+        <h3 id="basics">基本介紹</h3>
+        <ul>
+          <li>本擴充功能會自動領取您的掉寶、忠誠點數以及重要時刻。 只需觀看您喜愛的直播，不需進行任何設定。</li>
+          <li>
+            您可以隨時確認領取紀錄、上次領取時間，還有掉寶、忠誠點數及重要時刻的總數。
+            <span class="important"
+              >請注意，計數器只會記錄由擴充功能自身領取的次數，且不是 Twitch
+              自動發放給您的獎勵（例如參與揪團所獲得的忠誠點數）。
+            </span>
+          </li>
+          <li>本擴充功能會記錄在直播中發生的部分事件。 您可以為不同事件設定提醒，並瀏覽這些事件紀錄。</li>
+          <li>您所有的設定、統計資料、領取及事件的紀錄，將在您登入帳號的設備及瀏覽器之間同步。</li>
+          <li>
+            本擴充功能在彈出式的 Twitch 視窗，或其他網站的內嵌播放器中皆能正常運作。 不過，部分功能可能會受到限制。
+          </li>
+          <li class="important">
+            本擴充功能不需依靠介面，可在背景自動執行，您還是能收到新掉寶、重要時刻或獲取忠誠點數的通知。
+            不必費力親自收集。
+          </li>
+          <li class="important">
+            瀏覽器可能會自動中斷直播播放，特別是在背景分頁中靜音播放時。
+            為了確保播放不被干擾，不要同時開太多分頁，並維持您的直播在活躍（並未最小化）的分頁中。
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="alerts">提醒</h3>
+        <ul>
+          <li>您可以個別設定收到掉寶、頻道忠誠點數或重要時刻的提醒。</li>
+          <li>您也可以單獨打開聲音、作業系統通知或彈出式提醒，或者全部同時開啟。</li>
+          <li>
+            您可以立即測試提醒效果來決定如何設定。
+            <span class="important">提醒測試也會出現在領取紀錄中，但不會影響總數計數器。 </span>
+          </li>
+          <li>彈出式提醒會顯示在所有 Twitch 頁面上，亦可在全螢幕模式中顯示。</li>
+          <li>不同類型事件的提醒設定是相似的。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="history">領取紀錄</h3>
+        <ul>
+          <li>
+            您隨時可以查詢掉寶、忠誠點數及重要時刻的領取紀錄。
+            <span class="important">紀錄中只會儲存由擴充功能領取的項目，而不會記錄手動領取或自動頒發的項目。 </span>
+          </li>
+          <li>您可以依獎勵類型篩選歷史紀錄。</li>
+          <li class="important">
+            由於儲存空間限制，歷史紀錄中只會包含最近的 10 個掉寶、10 個重要時刻及 20 次忠誠點數。
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 id="settings">設定</h3>
+        <p>為了提升您在 Twitch 網站上的體驗，擴充功能提供額外的功能，且您隨時能在設定中調整。</p>
+
+        <h4 id="settings_raid-cancel">防止頻道揪團</h4>
+        <ul>
+          <li>擴充功能會防止您前往揪團的頻道。</li>
+          <li>在這種情形下，揪團的頁面會先短時間載入後再返回原頁面。 因此，您可獲得參與揪團後的額外忠誠點數。</li>
+        </ul>
+
+        <h4 id="settings_stream-preview">頻道選單中的直播預覽圖</h4>
+        <ul>
+          <li>本功能帶回了以前將游標停留於側邊欄的頻道上時，能夠顯示直播預覽圖片的功能。</li>
+          <li class="important">每 10 分鐘會產生一次新的預覽畫面，時間不可縮短。</li>
+        </ul>
+
+        <h4 id="settings_extensions-hide">隱藏 Twitch 實況互動元件</h4>
+        <ul>
+          <li>啟用此功能後，您可以隱藏在影片上顯示的實況互動元件（經由 Twitch 網站本身安裝的）。</li>
+        </ul>
+
+        <h4 id="settings_icon-swap">替換分頁圖示</h4>
+        <ul>
+          <li>若想隨時掌握直播是否正在最小化分頁中播放，您可以開啟此功能。</li>
+          <li>
+            如果分頁有正在播放的直播，其 Twitch 圖示將會變紅。
+            <span class="important">不過，這只會改變直播的圖示，不會改變錄製的影片、轉播或揪團直播的圖示。 </span>
+          </li>
+        </ul>
+
+        <h4 id="settings_pause-mouse">按住左鍵以暫停播放</h4>
+        <ul>
+          <li>按住左鍵半秒後放開</li>
+          <li>播放中的影片或直播將被暫停</li>
+          <li>若要繼續播放，對播放器按下左鍵即可</li>
+        </ul>
+
+        <h4 id="settings_reload-integrity">在領取獎勵受阻時重新整理頁面</h4>
+        <ul>
+          <li>若本擴充功能在領取獎勵時受阻，則會重新整理頁面。</li>
+          <li class="important">在此情況下，每過 10 分鐘以上時，將重新整理該頁面一次。</li>
+          <li>您可以在<a href="#errors_integrity">下方的欄位</a>了解更多關於錯誤及排除方法的資訊。</li>
+        </ul>
+
+        <h4 id="settings_reload-playback">自動重新整理播放器</h4>
+        <ul>
+          <li>擴充功能會在沒有回應或遇到錯誤時重新整理播放器。 若無法重新整理播放器，則會重新整理整個頁面。</li>
+          <li class="important">在此情況下，每過 5 分鐘以上時，將重新整理該頁面一次。</li>
+          <li>即使您的網路斷線，所有 Twitch 網頁皆會在網路正常後重新載入。</li>
+          <li class="important">這是實驗性功能，特定情形下可能無法正常運作。 將會在後續更新中持續修正及改進。</li>
+          <li>您可以在<a href="#errors_playback">下方的欄位</a>了解更多關於錯誤及排除方法的資訊。</li>
+        </ul>
+
+        <h4 id="settings_pause-prevent">防止播放器被停止播放</h4>
+        <ul>
+          <li>如果您靜音播放器所在的分頁，您的瀏覽器可能會暫停此播放器播放。</li>
+          <li>本擴充功能會暫時地取消靜音播放器（並將音量設定為最小）以避免瀏覽器自行介入操作。</li>
+        </ul>
+
+        <h4 id="settings_playback-start">自動開始播放</h4>
+        <ul>
+          <li>
+            若您在新的背景分頁中打開直播，擴充功能會暫時的將分頁設為前景並自動播放。
+            <span class="important">此時您可能會看到畫面閃爍。 </span>
+          </li>
+          <li>此功能只會在直播中運作，不會自動播放錄製的影片、推薦頻道或揪團的直播。</li>
+        </ul>
+
+        <h4 id="settings_discard-prevent">防止分頁被捨棄</h4>
+        <ul>
+          <li>瀏覽器具有清除長時間閒置分頁的機制，用來節省資源。 本功能會幫助您避免您的 Twitch 分頁遭到捨棄。</li>
+        </ul>
+
+        <h4 id="settings_notif-alert">在有新通知時同步顯示於作業系統通知</h4>
+        <ul>
+          <li>當您收到了一則來自開發者的新通知，也將會在您的作業系統通知中心顯示。</li>
+        </ul>
+
+        <h4 id="settings_auto-points">自動領取忠誠點數</h4>
+        <ul>
+          <li>本擴充功能會在您觀看任何直播時，自動領取額外的忠誠點數獎勵</li>
+        </ul>
+
+        <h4 id="settings_auto-drops">自動領取掉寶</h4>
+        <ul>
+          <li>本擴充功能會在您的掉寶進度條集滿至 100% 時，自動領取掉寶。</li>
+        </ul>
+
+        <h4 id="settings_auto-moments">自動領取重要時刻</h4>
+        <ul>
+          <li>本擴充功能會在觀看直播時，自動領取重要時刻。</li>
+        </ul>
+
+        <h4 id="settings_stats-reset">重置擴充功能統計資料</h4>
+        <ul>
+          <li>如果需要，您可以在設定中點擊相應的按鈕來重置擴充功能的統計資料。</li>
+          <li class="important">在這種情形下，將會清除所有的領取歷史紀錄及統計資料。</li>
+        </ul>
+
+        <h4 id="settings_ext-reset">完全重置擴充功能</h4>
+        <ul>
+          <li>若您遇到問題，您可以在設定中點擊相應的按鈕來重置擴充功能。</li>
+          <li class="important">這將會完全重設您的設定、領取紀錄及統計資料。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="drops">掉寶</h3>
+        <p>
+          本擴充功能會自動在有開啟掉寶的直播中領取掉寶。
+          <a href="https://help.twitch.tv/s/article/mission-based-drops#claimtime" target="_blank"
+            >了解更多關於掉寶的詳細資訊。
+          </a>
+        </p>
+
+        <ul>
+          <li>只需要觀看參與<a href="https://www.twitch.tv/drops/campaigns" target="_blank">掉寶活動</a>的頻道。</li>
+          <li>一旦達成觀看時數的需求，獎勵將被自動領取，如果還有下一個掉寶，則下一個掉寶進度也會開始。</li>
+          <li>
+            您可以在<a href="https://www.twitch.tv/drops/inventory" target="_blank">庫存頁面</a
+            >中查看掉寶進度及獲得的獎勵。
+          </li>
+          <li class="important">掉寶只能同時在一項活動（遊戲） 跟單獨一個頻道內獲得進度。</li>
+          <li class="important">
+            如果開啟了多個頻道，掉寶進度將只會在第一個開啟的頻道進行。
+            在領取了上個頻道所有的獎勵後，掉寶進度會從下一個開啟的頻道開始進行。
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="moments">重要時刻</h3>
+        <p>
+          本擴充功能會在觀看直播時，自動領取剛建立的重要時刻。 重要時刻目前處於開發階段，而且能夠使用的創作者相當有限。
+          <a href="https://help.twitch.tv/s/article/moments#earn" target="_blank">了解更多關於重要時刻的詳細資訊。 </a>
+        </p>
+        <ul>
+          <li>只需要觀看有開啟此功能的頻道，即可獲得 Twitch 聊天徽章。</li>
+          <li class="important">
+            為了領取重要時刻，您必須在創作者建立重要時刻的當下觀看直播。
+            如果您錯過了這個時間點甚至不到幾秒鐘，您將無法獲得這個重要時刻，重新整理頁面也無濟於事。
+          </li>
+          <li class="important">
+            有時候，通知您新重要時刻出現的通知沒有出現，同時也代表本擴充功能沒辦法幫您點擊該通知以領取這個重要時刻。
+            這是 Twitch 方面的問題，所以無法被修正。
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="points">忠誠點數</h3>
+        <p>
+          本擴充功能會自動領取觀看直播所獲得的忠誠點數。
+          <a href="https://help.twitch.tv/s/article/channel-points-guide#viewers" target="_blank"
+            >了解更多關於忠誠點數的詳細資訊。
+          </a>
+        </p>
+
+        <ul>
+          <li>只需要觀看有開啟此功能的直播，忠誠點數將會被自動領取。</li>
+          <li>您領取忠誠點數的間隔和數量取決於您的訂閱層級。</li>
+          <li class="important">
+            您只能同時賺取兩個頻道的忠誠點數。 如果開啟了超過兩個頻道，只有最後開啟的兩個頻道能賺取忠誠點數。 這是
+            Twitch 強加的限制，所以無法避免。
+          </li>
+          <li class="important">
+            在領取紀錄和數據中，只有由擴充功能領取的忠誠點數才會顯示。
+            連續觀看或參加揪團所獲得的額外忠誠點數將不會在此出現。
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="events">事件</h3>
+        <ul>
+          <li>本擴充功能會自動追蹤直播中發生的事件。</li>
+          <li>您可以個別開啟各種事件的提醒，以跟上這些您感興趣的內容。</li>
+          <li>最近發生的事件將儲存在"事件紀錄"區塊，並且可以由種類篩選。</li>
+          <li class="important">由於儲存空間限制，歷史紀錄中只包含最近的 15 次賽況預測及 20 次揪團。</li>
+        </ul>
+
+        <h4 id="events_predict-start">賽況預測開始</h4>
+        <ul>
+          <li>當一個賽況預測開始時，一則提醒將顯示在您正觀看中的直播畫面上。</li>
+          <li>這個提醒內容包含賽況預測的標題和可能的結果。</li>
+          <li>您可以藉由點擊這則提醒，在新的分頁中開啟賽況預測</li>
+          <li>同時，您可以在網頁播放器上方的彈出式提示中，點擊"開啟賽況預測"按鈕，即可立即打開賽況預測。</li>
+        </ul>
+
+        <h4 id="events_predict-result">賽況預測結果</h4>
+        <ul>
+          <li>在您參與的賽況預測結束時，將顯示一則提醒。</li>
+          <li>這個提醒內容包含您所贏得或失去的忠誠點數數量。</li>
+          <li>您可以藉由點擊提醒中忠誠點數的數量，在新的分頁中開啟獎勵選單。</li>
+          <li>在賽況預測被取消時也會顯示這則提醒。</li>
+        </ul>
+
+        <h4 id="events_raid">頻道揪團功能</h4>
+        <ul>
+          <li>當您前往揪團頻道時，將顯示一則提醒。</li>
+          <li>這個提醒內容包含您前往揪團的頻道名稱。 點擊頻道名稱將在新分頁中開啟這個頻道。</li>
+          <li>這則提醒同時也會告訴您是否已取消前往頻道（取消前往頻道的功能在擴充功能設定中可以找到）。</li>
+        </ul>
+
+        <h4 id="events_reload">重新整理頁面</h4>
+        <ul>
+          <li>如果本擴充功能強制重新整理一個頁面，將顯示一則提醒。</li>
+          <li>這個提醒內容包含被重新整理的網址及重新整理的理由。</li>
+          <li>重新整理的理由可能是因為 Twitch 發生的 <a href="#errors">錯誤</a> 。</li>
+          <li>您可以透過本提醒中的按鈕立即關閉自動重新整理功能。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="errors">關於錯誤的詳細說明</h3>
+
+        <h4 id="errors_playback">播放視訊串流時發生錯誤</h4>
+        <p>如果擴充功能在向 Twitch 伺服器建立請求時，偵測到 Twitch 的播放器凍結或發生錯誤，將會遭遇這個錯誤訊息。</p>
+        <p>
+          可能是因為您不穩定的網際網路或網際網路被中斷。 在這種情況下： <b>檢查網路連接</b> /
+          <b>關閉播放器的"低延遲"模式</b>。
+        </p>
+        <p>
+          也有可能是因為暫時性的 Twitch 伺服器當機導致。 在這種情況下： 藉由
+          <a href="https://twitter.com/TwitchSupport" target="_blank">Twitch Support Twitter</a> <b>確認服務狀態</b> /
+          <b>靜候修復</b>。
+        </p>
+
+        <h4 id="errors_integrity">領取獎勵時受阻</h4>
+        <p>如果擴充功能認為無法領取獎勵時，例如：額外忠誠點數或掉寶，將會遭遇這個錯誤訊息。</p>
+        <p>
+          這個錯誤在您的 IP 位址遭 Twitch 反機器人系統 shadowban 時發生。 有很多原因導致此問題發生，但最主要的一個是您的
+          IP 變動或來自您 IP 的大量請求。 您如果使用 VPN 將導致 IP
+          的變動，同時某些網際網路服務供應商（ISP）可能會常規性更換您的 IP 。 在您的 IP 位址底下使用過多的的電腦（開啟
+          Twitch）時將可能發出大量的請求，某些網際網路服務供應商（ISP）將許多住戶連接在同一個公用 IP 下。
+        </p>
+        <p class="important">
+          擴充功能本身不是造成此錯誤的原因！ 就目前來看， shadowban 將不會影響您的帳號，而且將在一陣子後被自動解除。
+        </p>
+        <p>
+          在這種情況下，您可以： <b>等幾個小時</b> / <b>更改您的 IP 位置</b> / <b>重新登入 Twitch</b> /
+          <b>清除瀏覽器暫存及 cookies</b>, <b>聯絡 Twitch 客服</b>。
+        </p>
+      </section>
+    </main>
+
+    <div class="hidden" id="googleTranslateElement"></div>
+  </body>
+</html>

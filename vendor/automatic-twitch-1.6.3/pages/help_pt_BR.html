@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title class="notranslate" data-i18n>extension_title+—+title_help</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="/pages/help.css" />
+    <script type="text/javascript" src="/js/deps/not-jquery-noajax.min.js"></script>
+    <script type="text/javascript" src="/js/deps/ext-storage-manager.min.js"></script>
+    <script type="text/javascript" src="/pages/help.js"></script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=initTranslate"
+      defer
+    ></script>
+  </head>
+
+  <body class="wrapper" id="wrapper">
+    <header>
+      <div class="header-wrapper notranslate">
+        <h1 class="title">Ajuda</h1>
+        <div class="ext-title">
+          <div data-i18n>extension_title</div>
+          <div
+            class="balloon balloon_tooltip balloon_right ml hidden"
+            id="translateGoogle"
+            data-balloon
+            data-balloon-tooltip
+          >
+            <button class="translate-google" id="translateGoogleBtn"></button>
+            <div class="balloon__content" data-balloon-content>
+              <div class="balloon__text" id="translateGoogleHint"></div>
+              <button class="balloon__close" data-balloon-action></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="menu__content" id="menuContent">
+        <button class="menu__toggler" id="menuContentToggler" aria-label="Toggle table of contents"></button>
+      </div>
+    </div>
+
+    <aside id="aside">
+      <nav id="nav">
+        <a class="heading-link heading-link_basics" href="#basics">Noções Básicas</a>
+        <a class="heading-link heading-link_alerts" href="#alerts">Alertas</a>
+        <a class="heading-link heading-link_history" href="#history">Histórico de Resgates</a>
+        <a class="heading-link heading-link_settings" href="#settings">Configurações</a>
+        <a class="heading-link heading-link_drops" href="#drops">Drops</a>
+        <a class="heading-link heading-link_moments" href="#moments">Momentos</a>
+        <a class="heading-link heading-link_points" href="#points">Pontos do Canal</a>
+        <a class="heading-link heading-link_events" href="#events">Eventos</a>
+        <a class="heading-link heading-link_errors" href="#errors">Informações Sobre Erros</a>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <section>
+        <h3 id="basics">Noções Básicas</h3>
+        <ul>
+          <li>
+            Essa extensão irá resgatar automaticamente suas recompensas de Drops, Pontos do Canal e Momentos. Apenas
+            assista às suas transmissões favoritas, não há necessidade de configurar nada.
+          </li>
+          <li>
+            Você sempre pode conferir o histórico de resgates, quando aconteceram os últimos resgates, e também a
+            quantidade total de Drops, Pontos do Canal e Momentos resgatados.
+            <span class="important"
+              >Observe que os contadores mostram apenas o que é resgatado pela própria extensão, e não o que é
+              automaticamente fornecido a você pela Twitch (como por exemplo, Pontos do Canal por participar de
+              Raids).</span
+            >
+          </li>
+          <li>
+            A extensão monitora alguns eventos que ocorrem nas transmissões. Você pode configurar alertas para
+            diferentes eventos e acompanhar o histórico deles.
+          </li>
+          <li>
+            Todas as suas configurações, estatísticas, resgates e histórico de eventos são sincronizados entre
+            dispositivos com navegadores em que você está conectado com sua conta.
+          </li>
+          <li>
+            A extensão também funciona em reprodutores de vídeo da Twitch abertos em uma janela pop-up ou que estejam
+            embutidos em outro site. No entanto, alguns recursos podem ser limitados.
+          </li>
+          <li class="important">
+            A extensão executa suas ações em segundo plano sem depender da interface do site da Twitch, para que você
+            ainda possa ver notificações sobre Drops, Momentos ou botões para reivindicar Pontos do Canal que estejam
+            disponíveis. Porém, não será necessário clicar neles.
+          </li>
+          <li class="important">
+            O navegador pode interromper automaticamente a reprodução das transmissões, principalmente se elas estiverem
+            em abas ocultas e com o som desligado. Para garantir que a reprodução não seja interrompida, não abra muitas
+            abas e mantenha sua transmissão desejada ativa (não minimizada) na guia do navegador.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="alerts">Alertas</h3>
+        <ul>
+          <li>Você pode configurar alertas para quando receber Drops, Pontos do Canal ou Momentos separadamente.</li>
+          <li>
+            Você também pode ligar separadamente apenas os alertas sonoros, o alerta nativo do Sistema Operacional, o
+            alerta pop-up, ou você pode ativá-los todos juntos simultaneamente.
+          </li>
+          <li>
+            Você pode realizar testes de alertas quando quiser para decidir as opções que preferir nas configurações.
+            <span class="important"
+              >Testes de alertas são incluídos no histórico de resgates, porém não interferem no número mostrado nos
+              contadores de resgates totais.</span
+            >
+          </li>
+          <li>
+            Alertas pop-up são exibidos em todas as páginas no site da Twitch e são visíveis mesmo no modo de tela
+            cheia.
+          </li>
+          <li>Alertas para diferentes tipos de eventos são configurados de forma semelhante.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="history">Histórico de Resgates</h3>
+        <ul>
+          <li>
+            Você sempre pode checar o histórico de resgate de Drops, Pontos do Canal e Momentos sempre que quiser.
+            <span class="important">
+              Ele apenas armazena o que é reivindicado pela extensão em si, e não o que é reivindicado manualmente por
+              você ou dado automaticamente pela Twitch.</span
+            >
+          </li>
+          <li>Você pode filtrar o histórico pelo tipo de recompensas.</li>
+          <li class="important">
+            Devido aos limites de armazenamento, apenas os últimos 10 Drops e Momentos, e os últimos 20 Pontos do Canal
+            serão incluídos no histórico.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 id="settings">Configurações</h3>
+        <p>
+          Para melhorar sua experiência no site da Twitch, a extensão oferece recursos adicionais que você pode ativar
+          quando quiser nas configurações.
+        </p>
+
+        <h4 id="settings_raid-cancel">Prevenção de Encaminhamento de Raids</h4>
+        <ul>
+          <li>A extensão impedirá a transição para o canal da Raid.</li>
+          <li>
+            Neste caso, a página de Raid será carregada por um curto período e regressará. Dessa forma, você receberá
+            todos os pontos de bônus por participar da Raid.
+          </li>
+        </ul>
+
+        <h4 id="settings_stream-preview">Pré-visualização de Transmissões no Menu de Canais</h4>
+        <ul>
+          <li>
+            Esta funcionalidade trará de volta as imagens de pré-visualização exibidas ao passar o mouse sobre os canais
+            do menu lateral.
+          </li>
+          <li class="important">
+            Novas pré-visualizações são geradas a cada 10 minutos. Este tempo não pode ser reduzido.
+          </li>
+        </ul>
+
+        <h4 id="settings_extensions-hide">Ocultando Extensões da Twitch</h4>
+        <ul>
+          <li>
+            Com esta funcionalidade, você poderá ocultar extensões sobrepostas ao reprodutor de vídeo (instaladas pelo
+            próprio site da Twitch).
+          </li>
+        </ul>
+
+        <h4 id="settings_icon-swap">Modificar ícone da Aba</h4>
+        <ul>
+          <li>
+            Para sempre saber se a reprodução de uma transmissão está rodando em uma aba minimizada, você pode ativar
+            este recurso.
+          </li>
+          <li>
+            O ícone da Twitch para abas com um reprodutor de vídeo ativo ficará vermelho.
+            <span class="important"
+              >Entretanto, só mudará para transmissões ao vivo, e não para vídeos gravados, em transmissões hospedadas
+              ou em Raids.</span
+            >
+          </li>
+        </ul>
+
+        <h4 id="settings_pause-mouse">Pausar a Reprodução de Vídeo ao segurar o LMB</h4>
+        <ul>
+          <li>Segure o botão esquerdo do mouse em cima do reprodutor de vídeo por meio segundo e solte.</li>
+          <li>A reprodução será pausada.</li>
+          <li>Para continuar a reprodução, apenas clique em cima do reprodutor como de costume.</li>
+        </ul>
+
+        <h4 id="settings_reload-integrity">Recarregar a Página Quando o Resgate de Recompensas for Bloqueado</h4>
+        <ul>
+          <li>A extensão irá recarregar a página se ela detectar um bloqueio enquanto resgata uma recompensa.</li>
+          <li class="important">Neste caso, a página será recarregada uma vez a cada 5 minutos.</li>
+          <li>
+            Você pode conhecer mais sobre este erro e sua solução na <a href="#errors_integrity">seção abaixo</a>.
+          </li>
+        </ul>
+
+        <h4 id="settings_reload-playback">Reinício Automático do Reprodutor de Vídeo</h4>
+        <ul>
+          <li>
+            A extensão reiniciará o reprodutor de vídeo se ele congelar ou encontrar um erro. Se o reprodutor de vídeo
+            falhar em recarregar, a página inteira será recarregada.
+          </li>
+          <li class="important">Neste caso, a página será recarregada uma vez a cada 10 minutos.</li>
+          <li>
+            Mesmo que você perca a sua conexão com a internet, todas as páginas da Twitch serão automaticamente
+            recarregadas logo após sua conexão ser reestabelecida.
+          </li>
+          <li class="important">
+            Este recurso é experimental e pode não funcionar corretamente em alguns casos. Ele vai continuar melhorando
+            conforme as atualizações.
+          </li>
+          <li>Você pode conhecer mais sobre este erro e sua solução na <a href="#errors_playback">seção abaixo</a>.</li>
+        </ul>
+
+        <h4 id="settings_pause-prevent">Prevenção de Interrupção de Reprodução</h4>
+        <ul>
+          <li>Seu navegador pode pausar o reprodutor de vídeo se você deixar alguma guia com ele no mudo.</li>
+          <li>
+            A extensão irá automaticamente desativar o mudo por um segundo (selecionando o volume para o mínimo
+            possível) para prevenir esta ação do navegador.
+          </li>
+        </ul>
+
+        <h4 id="settings_playback-start">Início Automático de Reprodução</h4>
+        <ul>
+          <li>
+            Se você abrir uma transmissão em uma nova guia, a extensão irá automaticamente começar a reprodução, focando
+            nela por um curto período de tempo.
+            <span class="important">Você pode vê-la piscando quando isso acontecer.</span>
+          </li>
+          <li>
+            Esta funcionalidade só funciona para transmissões ao vivo e não irá começar a reprodução para vídeos
+            gravados, em transmissões hospedadas ou em Raids.
+          </li>
+        </ul>
+
+        <h4 id="settings_discard-prevent">Prevenção de Descarte de Abas</h4>
+        <ul>
+          <li>
+            O navegador possui um mecanismo que desativa abas que não foram usadas por algum tempo para economizar
+            recursos. Esta funcionalidade irá ajudar a evitar que as abas da Twitch sejam desativadas.
+          </li>
+        </ul>
+
+        <h4 id="settings_notif-alert">Mostrar Alertas do Sistema Operacional Quando Há uma Nova Notificação</h4>
+        <ul>
+          <li>
+            Quando você recebe uma nova notificação de um desenvolvedor da extensão, um alerta será mostrado na barra de
+            notificações do seu sistema operacional.
+          </li>
+        </ul>
+
+        <h4 id="settings_auto-points">Resgate Automático de Pontos do Canal</h4>
+        <ul>
+          <li>A extensão irá automaticamente resgatar Pontos do Canal ao assistir quaisquer canais.</li>
+        </ul>
+
+        <h4 id="settings_auto-drops">Resgate Automático de Drops</h4>
+        <ul>
+          <li>A extensão automaticamente irá resgatar Drops quando o progresso chegar a 100%.</li>
+        </ul>
+
+        <h4 id="settings_auto-moments">Resgate Automático de Momentos</h4>
+        <ul>
+          <li>A extensão automaticamente irá resgatar Momentos enquanto assiste às transmissões.</li>
+        </ul>
+
+        <h4 id="settings_stats-reset">Redefinir as Estatísticas da Extensão</h4>
+        <ul>
+          <li>
+            Se necessário, você pode redefinir as estatísticas da extensão completamente clicando no botão designado nas
+            configurações.
+          </li>
+          <li class="important">
+            Neste caso, todo o histórico de reivindicações e as estatísticas serão totalmente apagadas.
+          </li>
+        </ul>
+
+        <h4 id="settings_ext-reset">Redefinição Completa da Extensão</h4>
+        <ul>
+          <li>
+            Se encontrar problemas, a extensão pode ser redefinida completamente clicando no botão designado nas
+            configurações.
+          </li>
+          <li class="important">
+            Isso irá redefinir completamente todas as configurações, histórico de reivindicações e suas estatísticas.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="drops">Drops</h3>
+        <p>
+          A extensão automaticamente resgata Drops ganhos por assistir transmissões elegíveis.
+          <a href="https://help.twitch.tv/s/article/mission-based-drops#claimtime" target="_blank"
+            >Saiba mais sobre Drops.</a
+          >
+        </p>
+
+        <ul>
+          <li>
+            Apenas assista canais que participam de
+            <a href="https://www.twitch.tv/drops/campaigns" target="_blank">campanhas de Drops</a>.
+          </li>
+          <li>
+            Ao alcançar o tempo de visualização necessário, a recompensa será reivindicada automaticamente e o progresso
+            na obtenção da próxima, se houver, começará.
+          </li>
+          <li>
+            Você pode ver o progresso de Drops e recompensas reivindicadas na
+            <a href="https://www.twitch.tv/drops/inventory" target="_blank">página do seu inventário</a>.
+          </li>
+          <li class="important">
+            Você poderá apenas fazer progresso para obter Drops em uma única campanha (jogo) e em um canal participante
+            de cada vez.
+          </li>
+          <li class="important">
+            Se vários canais estiverem abertos, será priorizado o progresso dos Drops do primeiro canal aberto. Ao
+            receber todas as recompensas disponíveis, o progresso começará no canal aberto seguinte.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="moments">Momentos</h3>
+        <p>
+          A extensão automaticamente irá resgatar Momentos enquanto você assiste transmissões. Momentos estão atualmente
+          em beta e disponíveis apenas para um número limitado de streamers.
+          <a href="https://help.twitch.tv/s/article/moments#earn" target="_blank">Saiba mais sobre Momentos.</a>
+        </p>
+        <ul>
+          <li>Basta assistir aos canais que utilizam deste recurso para receber distintivos de chat da Twitch.</li>
+          <li class="important">
+            Para reivindicar um Momento, você deve assistir à transmissão no instante em que o streamer cria um Momento.
+            Se você perder este Momento, mesmo que por alguns segundos, você não será mais capaz de obtê-lo, recarregar
+            a página não irá ajudar.
+          </li>
+          <li class="important">
+            Além disso, às vezes, uma notificação sobre um novo Momento pode não aparecer, o que significa que a
+            extensão não poderá reivindicá-lo. Esses erros ocorrem no sistema da Twitch e não podem ser corrigidos pela
+            extensão.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="points">Pontos do Canal</h3>
+        <p>
+          A extensão reivindica automaticamente Pontos do Canal ganhos por assistir transmissões.
+          <a href="https://help.twitch.tv/s/article/channel-points-guide#viewers" target="_blank"
+            >Saiba mais sobre Pontos do Canal.</a
+          >
+        </p>
+
+        <ul>
+          <li>Apenas assista transmissões, os Pontos serão reivindicados automaticamente.</li>
+          <li>
+            O tempo até você receber novos Pontos e a quantidade recebida deles dependerá do seu nível de inscrição.
+          </li>
+          <li class="important">
+            Você só poderá ganhar Pontos em dois canais simultaneamente. Se mais de 2 canais estiverem abertos, os
+            Pontos serão ganhos naqueles que foram abertos por último. Esta limitação é imposta pela própria Twitch e
+            não pode ser contornada.
+          </li>
+          <li class="important">
+            No histórico de reivindicações e estatísticas, apenas os Pontos recebidos pela extensão em si são exibidos.
+            Pontos Bônus por assistir sequências ou por participar em Raids não serão considerados.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="events">Eventos</h3>
+        <ul>
+          <li>A extensão monitora automaticamente eventos variados que ocorrem nas transmissões.</li>
+          <li>
+            Você pode alternar individualmente os alertas para cada tipo de evento para se manter ligado apenas nos que
+            lhe interessam.
+          </li>
+          <li>
+            Os últimos eventos são armazenados na seção "Histórico de Eventos", onde eles podem ser filtrados por tipo.
+          </li>
+          <li class="important">
+            Devido aos limites de armazenamento, apenas os últimos 15 Palpites e 20 Raids serão incluídos no histórico.
+          </li>
+        </ul>
+
+        <h4 id="events_predict-start">Início de um Palpite</h4>
+        <ul>
+          <li>Um alerta é exibido quando um Palpite começar em uma das transmissões que você está assistindo.</li>
+          <li>Este alerta contém o nome do Palpite e seus possíveis resultados.</li>
+          <li>Você pode abrir o Palpite em uma guia separada, clicando no seu nome no alerta.</li>
+          <li>
+            Além disso, você pode abrir imediatamente o Palpite no pop-up no canto superior direito do reprodutor de
+            vídeo clicando no botão "Abrir Palpite".
+          </li>
+        </ul>
+
+        <h4 id="events_predict-result">Resultado de Palpites</h4>
+        <ul>
+          <li>Um alerta é exibido ao final de um Palpite que você participou.</li>
+          <li>Este alerta contém a quantia de Pontos que você ganhou ou perdeu.</li>
+          <li>Você pode abrir o menu de recompensas em uma guia separada clicando no número de Pontos no alerta.</li>
+          <li>Um alerta também será exibido se o Palpite houver sido cancelado.</li>
+        </ul>
+
+        <h4 id="events_raid">Raid de Canal</h4>
+        <ul>
+          <li>Quando um canal for Raidado, um alerta será exibido.</li>
+          <li>
+            Este alerta contém o nome do canal Raidado. Ao clicar neste nome, o canal poderá ser aberto em uma nova
+            guia.
+          </li>
+          <li>
+            Este alerta também indicará se a entrada no canal da Raid for cancelada (a opção de cancelar a transição
+            automática está disponível nas configurações da extensão).
+          </li>
+        </ul>
+
+        <h4 id="events_reload">Página Recarregada</h4>
+        <ul>
+          <li>Se a extensão forçar uma recarga da página, um alerta será exibido.</li>
+          <li>O alerta contém o endereço da página recarregada e o motivo da recarga.</li>
+          <li>O motivo da recarga pode ser um dos <a href="#errors">erros</a> da Twitch.</li>
+          <li>Você pode desativar a recarga automática de página clicando no botão presente no alerta.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="errors">Informações Sobre Erros</h3>
+
+        <h4 id="errors_playback">Falha ao Reproduzir Vídeo</h4>
+        <p>
+          Esse erro ocorrerá se a extensão detectar travamentos no reprodutor de vídeo ou problemas ao fazer
+          solicitações para o servidor da Twitch.
+        </p>
+        <p>
+          A razão pode ser uma conexão instável com a Internet ou sua interrupção pelo usuário. Nesse caso:
+          <b>verifique sua conexão com a Internet</b> / <b>desligue o modo "Latência Baixa" do reprodutor de vídeo</b>.
+        </p>
+        <p>
+          Além disso, a razão pode ser o congestionamento temporário dos servidores da Twitch. Nesse caso:
+          <b>verifique o estado dos servidores</b> no
+          <a href="https://twitter.com/TwitchSupport" target="_blank">Twitter de Suporte da Twitch</a> /
+          <b>ou apenas aguarde a normalização</b>.
+        </p>
+
+        <h4 id="errors_integrity">Resgate de Recompensas Impedido</h4>
+        <p>
+          Esse erro ocorrerá se a extensão determinar que não foi possível reivindicar uma recompensa, como Pontos ou um
+          Drop.
+        </p>
+        <p>
+          Esse erro ocorre quando o sistema anti-bot da Twitch coloca o seu endereço IP em um shadowban. Podem haver
+          várias razões para isso acontecer, mas as principais se tratam da mudança do seu endereço IP ou se um grande
+          número de solicitações partiu dele. As mudanças de endereço IP podem ocorrer se você utilizar uma VPN, além
+          disso, alguns provedores de Internet podem alterar seu endereço IP regularmente. O grande número de
+          solicitações aos servidores pode ocorrer se houverem muitos computadores (com a Twitch aberta) em seu endereço
+          IP, além de que alguns provedores de Internet conectam muitas residências a um único IP público.
+        </p>
+        <p class="important">
+          A extensão não é a causa desse erro! No momento, esse shadowban não afeta sua conta permanentemente e é
+          removido automaticamente após algum tempo.
+        </p>
+        <p>
+          Se encontrar esse erro: <b>aguarde algumas horas</b> / <b>altere seu endereço IP</b> /
+          <b>faça login novamente na Twitch</b> / <b>limpe o cache do navegador e os cookies</b>,
+          <b>entre em contato com o suporte da Twitch</b>.
+        </p>
+      </section>
+    </main>
+
+    <div class="hidden" id="googleTranslateElement"></div>
+  </body>
+</html>

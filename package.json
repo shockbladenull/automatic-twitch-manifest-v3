@@ -1,0 +1,31 @@
+{
+  "name": "automatic-twitch-manifest-v3",
+  "version": "1.6.4",
+  "description": "Automatically claim earned Twitch rewards and keep live streams playing across tabs",
+  "engines": {
+    "node": ">=22"
+  },
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:unit": "node --test tests/playback.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "package": "node scripts/package.mjs",
+    "verify:package": "node scripts/verify-package.mjs"
+  },
+  "keywords": [],
+  "author": "Lan Junchuan (shockbladenull)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shockbladenull/automatic-twitch-manifest-v3.git"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "acorn": "^8.18.0",
+    "fflate": "^0.8.3",
+    "playwright": "^1.63.0",
+    "prettier": "^3.9.9"
+  }
+}

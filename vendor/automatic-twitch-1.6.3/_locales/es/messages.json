@@ -1,0 +1,467 @@
+{
+   "alert_claimedMany": {
+      "message": "reclamado"
+   },
+   "alert_claimedOne": {
+      "message": "reclamado"
+   },
+   "alert_criticalLuck": {
+      "message": "Suerte crítica"
+   },
+   "alert_disableAll": {
+      "message": "Desactivar todas las alertas emergentes"
+   },
+   "alert_disableThis": {
+      "message": "Deshabilitar alertas para estos eventos"
+   },
+   "alert_drop": {
+      "message": "1 Drop"
+   },
+   "alert_eventVar": {
+      "message": "en Twitch"
+   },
+   "alert_extAutomation": {
+      "message": "Automatización de extensiones"
+   },
+   "alert_forChannel": {
+      "message": "En el canal"
+   },
+   "alert_forGame": {
+      "message": "Para el juego"
+   },
+   "alert_learnMore": {
+      "message": "Aprender más sobre esto"
+   },
+   "alert_moment": {
+      "message": "1 Momento"
+   },
+   "alert_newNotification": {
+      "message": "Has recibido una nueva notificación:"
+   },
+   "alert_newNotificationImportant": {
+      "message": "Has recibido una notificación importante:"
+   },
+   "alert_openPrediction": {
+      "message": "Predicción Abierta"
+   },
+   "alert_points": {
+      "message": "Puntos de Canal"
+   },
+   "alert_pointsVar": {
+      "message": "Puntos"
+   },
+   "alert_predictionsDescrLose": {
+      "message": "Tú \u003Cb class=\"_ATBE_color _ATBE_color_fail\">perdiste\u003C/b>, quemaste:"
+   },
+   "alert_predictionsDescrOutcomes": {
+      "message": "Resultados posibles:"
+   },
+   "alert_predictionsDescrRefund": {
+      "message": "Predicción \u003Cb class=\"_ATBE_color\">cancelada\u003C/b>, reembolsado:"
+   },
+   "alert_predictionsDescrStart": {
+      "message": "La predicción fue iniciada:"
+   },
+   "alert_predictionsDescrWin": {
+      "message": "Tú \u003Cb class=\"_ATBE_color _ATBE_color_success\">ganaste\u003C/b>, adquiriste:"
+   },
+   "alert_predictionsResult": {
+      "message": "Resultado de la Predicción"
+   },
+   "alert_predictionsStart": {
+      "message": "Predicción iniciada"
+   },
+   "alert_predictionsVar": {
+      "message": "Predicción"
+   },
+   "alert_raids": {
+      "message": "Raid realizado"
+   },
+   "alert_raidsCanceled": {
+      "message": "La transición al canal se ha cancelado"
+   },
+   "alert_raidsDescr": {
+      "message": "Has participado en el Raideo del canal:"
+   },
+   "alert_reloadDisable": {
+      "message": "Deshabilitar estas recargas"
+   },
+   "alert_reloads": {
+      "message": "Recargar página"
+   },
+   "alert_reloadsDescr": {
+      "message": "La extensión recargó la página:"
+   },
+   "alert_reloadsDescrIntegrityFail": {
+      "message": "Bloqueo de reclamación de Recompensas"
+   },
+   "alert_reloadsDescrPlaybackError": {
+      "message": "Error al reproducir la transmisión"
+   },
+   "alert_reloadsDescrReason": {
+      "message": "Razón:"
+   },
+   "alert_winFactor": {
+      "message": "La apuesta se multiplica:"
+   },
+   "balloon_continue": {
+      "message": "¿Continuar?"
+   },
+   "balloon_no": {
+      "message": "No"
+   },
+   "balloon_ok": {
+      "message": "OK"
+   },
+   "balloon_resetAll": {
+      "message": "Vas a \u003Cb>restablecer todas\u003C/b> las configuraciones, el historial y las estadísticas de la extensión."
+   },
+   "balloon_resetStats": {
+      "message": "Vas a \u003Cb>restablecer todo\u003C/b> el historial y las estadísticas de la extensión."
+   },
+   "balloon_yes": {
+      "message": "Sí"
+   },
+   "contributors_title": {
+      "message": "Colaboradores"
+   },
+   "donate_card": {
+      "message": "Tarjeta Bancaria"
+   },
+   "donate_info": {
+      "message": "Dado que esta extensión es gratuita y no colecto ni vendo sus datos personales Usted es bienvenido a hacer una donación para motivar el trabajo duro. ¡Gracias!"
+   },
+   "extension_descr": {
+      "message": "¡La extensión reclama automáticamente Drops, Puntos de Canal y Momentos en Twitch, y también añade muchas otras características!"
+   },
+   "extension_lang": {
+      "message": "es"
+   },
+   "extension_name": {
+      "message": "Twitch Automático: Drops, Momentos y Puntos"
+   },
+   "extension_title": {
+      "message": "Twitch Automático"
+   },
+   "extension_translateHint": {
+      "message": "Traduce la página a tu idioma (mediante el traductor de Google)"
+   },
+   "filter_all": {
+      "message": "Todos"
+   },
+   "filter_empty": {
+      "message": "Nada aquí aún"
+   },
+   "filter_show": {
+      "message": "Mostrar:"
+   },
+   "help_title": {
+      "message": "Ayuda"
+   },
+   "hint_autoReload": {
+      "message": "Característica experimental, puede no funcionar correctamente en algunos casos. Se recomienda desactivarla si el Internet es inestable."
+   },
+   "hint_autoStart": {
+      "message": "Para lograr esto, la extensión enfocará las respectivas pestañas por una fracción de segundo cuando se carguen, es posible que vea un parpadeo en este momento."
+   },
+   "hint_cancelRaid": {
+      "message": "La página de Raideo se cargará por un corto tiempo y será devuelta, con eso recibirás Puntos adicionales por la participación en un Raid."
+   },
+   "hint_changeIcon": {
+      "message": "El ícono rojo solo indicará una transmisión activa, no cambiará para las pestañas con reproducción de videos, transmisiones de canales hosteados y raideados."
+   },
+   "hint_integrityReload": {
+      "message": "Twitch puede experimentar errores o puede bloquear repentinamente ciertas acciones del usuario. Cuando la extensión detecta este problema, volverá a cargar la página para intentar arreglarlo."
+   },
+   "hint_note": {
+      "message": "Nota"
+   },
+   "hint_notificationAlert": {
+      "message": "Las alertas para notificaciones importantes siempre serán mostradas."
+   },
+   "hint_preventPause": {
+      "message": "Para evitar que el navegador detenga el reproductor de vídeo, la extensión lo desilenciará por un segundo. Función experimental, es posible que en algunos casos no funcione correctamente."
+   },
+   "intro_additional": {
+      "message": "No te olvides de revisar la sección de \"Donaciones\". Puedes leer más sobre los matices de la extensión en la página de Ayuda."
+   },
+   "intro_automates": {
+      "message": "La extensión puede enfocarse automáticamente en tu navegador (minimizando otros programas), activar ventanas, recargar páginas, silenciar el reproductor temporalmente y mostrar notificaciones. Puedes desactivar esto en el apartado de \"Configuración de Extensiones\"."
+   },
+   "intro_background": {
+      "message": "La extensión realiza sus acciones en segundo plano sin depender de la interfaz, para que puedas ver las notificaciones sobre nuevos Drops, Momentos o botones para ganar Puntos. ¡Ya no habrá necesidad hacer clic en ellos!"
+   },
+   "intro_basics": {
+      "message": "Esta extensión reclama automáticamente tus Drops, Puntos de Canal y Momentos. ¡Solo mira tus transmisiones favoritas, sin necesidad de configurar nada!"
+   },
+   "intro_close": {
+      "message": "Cerrar"
+   },
+   "intro_events": {
+      "message": "La extensión proporciona alertas personalizables para ciertos eventos como Raids y Predicciones. También mantiene un historial de eventos recientes."
+   },
+   "intro_hello": {
+      "message": "Hola y gracias por la instalación 👋"
+   },
+   "intro_openHelp": {
+      "message": "Abrir Ayuda"
+   },
+   "intro_sets": {
+      "message": "La extensión también proporciona un amplio conjunto de características y ajustes adicionales, como el reinicio automático del reproductor ante un error, mostrar miniaturas al pasar sobre canales en el menú, ajustes flexibles para todo tipo de alertas, y mucho más."
+   },
+   "intro_stats": {
+      "message": "Usted siempre puede comprobar el historial de recompensas, así como el número total de Drops, Puntos y Momentos reclamados. Tenga en cuenta que sólo se incluye aquí lo reclamado por la propia extensión, y no es dado automáticamente por Twitch (por ejemplo, Puntos de Canal por participar en un Raideo)."
+   },
+   "links_reviews": {
+      "message": "Reseñas"
+   },
+   "links_support": {
+      "message": "Soporte"
+   },
+   "menu_alerts": {
+      "message": "Config. de Alertas"
+   },
+   "menu_claims": {
+      "message": "Historial de Reclamo"
+   },
+   "menu_donate": {
+      "message": "Donar"
+   },
+   "menu_events": {
+      "message": "Historial de Eventos"
+   },
+   "menu_settings": {
+      "message": "Ajustes de Extensión"
+   },
+   "menu_support": {
+      "message": "Apoya en"
+   },
+   "notifs_error": {
+      "message": "Error al recibir notificaciones"
+   },
+   "notifs_none": {
+      "message": "No hay notificaciones"
+   },
+   "notifs_open": {
+      "message": "Abrir notificaciones"
+   },
+   "notifs_read": {
+      "message": "Todo leído"
+   },
+   "notifs_title": {
+      "message": "Notificaciones"
+   },
+   "notifs_unread": {
+      "message": "sin leer"
+   },
+   "offer_patreonText": {
+      "message": "Apoya el desarrollo de la extensión en"
+   },
+   "offer_patreonTitle": {
+      "message": "¡Guau, más de 50 Drops ya reclamados!"
+   },
+   "offer_rateLink": {
+      "message": "Valóralo"
+   },
+   "offer_rateText": {
+      "message": "¡y cuéntale a tus amigos al respecto!"
+   },
+   "offer_rateTitle": {
+      "message": "¿Te gusta la extensión?"
+   },
+   "patrons_title": {
+      "message": "Patrons (patreon.com)"
+   },
+   "setting_autoReload": {
+      "message": "Recargar automáticamente el reproductor o la página del canal en caso de errores de reproducción"
+   },
+   "setting_autoStart": {
+      "message": "Iniciar reproducción automáticamente en pestañas minimizadas u ocultas"
+   },
+   "setting_cancelRaid": {
+      "message": "Evitar ir al canal Raideado"
+   },
+   "setting_changeIcon": {
+      "message": "Cambiar icono de las pestañas de Twitch que tienen una reproducción en vivo"
+   },
+   "setting_claimDrops": {
+      "message": "Reclamar Drops automáticamente"
+   },
+   "setting_claimMoments": {
+      "message": "Reclamar Momentos automáticamente"
+   },
+   "setting_claimPoints": {
+      "message": "Reclamar Puntos de Canal automáticamente"
+   },
+   "setting_clickPause": {
+      "message": "Detener la reproducción presionando el botón izquierdo del ratón en el reproductor"
+   },
+   "setting_enableNative": {
+      "message": "Activar alerta nativa del SO"
+   },
+   "setting_enableSound": {
+      "message": "Habilitar alerta de sonido"
+   },
+   "setting_enableVisual": {
+      "message": "Activar alerta emergente en el sitio web de Twitch"
+   },
+   "setting_hideExtensions": {
+      "message": "Ocultar extensiones de Twitch superpuestas en el reproductor de vídeo"
+   },
+   "setting_integrityReload": {
+      "message": "Recarga automáticamente las páginas si hay problemas al reclamar recompensas"
+   },
+   "setting_notificationAlert": {
+      "message": "Mostrar una alerta nativa de SO cuando se recibe una nueva notificación"
+   },
+   "setting_preventDiscard": {
+      "message": "Evitar que el navegador descarte automáticamente las pestañas de Twitch inactivas"
+   },
+   "setting_preventPause": {
+      "message": "Evita que la reproducción de la transmisión se detenga en pestañas ocultas"
+   },
+   "setting_resetAll": {
+      "message": "Reiniciar toda la extensión"
+   },
+   "setting_resetStats": {
+      "message": "Reiniciar estadísticas"
+   },
+   "setting_showPreviews": {
+      "message": "Mostrar imágenes de vista previa al pasar el cursor sobre canales en el menú"
+   },
+   "setting_soundVolume": {
+      "message": "Volumen de alerta"
+   },
+   "setting_testDrops": {
+      "message": "Probar alerta para Drops"
+   },
+   "setting_testMoments": {
+      "message": "Probar alerta para Momentos"
+   },
+   "setting_testPoints": {
+      "message": "Probar alerta para Puntos"
+   },
+   "setting_testPredictionsResult": {
+      "message": "Probar alerta para el fin de una Predicción"
+   },
+   "setting_testPredictionsStart": {
+      "message": "Probar alerta para el inicio de una Predicción"
+   },
+   "setting_testRaids": {
+      "message": "Probar alerta para Raid"
+   },
+   "setting_testReloads": {
+      "message": "Probar alerta para una recarga"
+   },
+   "setting_visualDuration": {
+      "message": "Duración de alerta emergente"
+   },
+   "settings_disable": {
+      "message": "Off"
+   },
+   "settings_enable": {
+      "message": "On"
+   },
+   "stat_claims": {
+      "message": "Reclamado a través de la extensión"
+   },
+   "stat_date": {
+      "message": "Última reclamación"
+   },
+   "stat_disabled": {
+      "message": "la reclamación automática está desactivada"
+   },
+   "stat_never": {
+      "message": "Nunca"
+   },
+   "stat_now": {
+      "message": "Justo ahora"
+   },
+   "stat_recent": {
+      "message": "Hace algunos segundos"
+   },
+   "stat_unknown": {
+      "message": "Desconocido"
+   },
+   "status_disabled": {
+      "message": "Extensión deshabilitada"
+   },
+   "status_enabled": {
+      "message": "Extensión habilitada"
+   },
+   "status_notifications": {
+      "message": "Hay nuevas notificaciones"
+   },
+   "title_alertDrops": {
+      "message": "Al reclamar Drops"
+   },
+   "title_alertMoments": {
+      "message": "Al reclamar Momentos"
+   },
+   "title_alertPoints": {
+      "message": "Al reclamar Puntos de Canal"
+   },
+   "title_alertPredictionsResult": {
+      "message": "Cuando una Predicción (con tu participación) finaliza"
+   },
+   "title_alertPredictionsStart": {
+      "message": "Cuando una Predicción empieza"
+   },
+   "title_alertRaids": {
+      "message": "Cuando inicia un Raid"
+   },
+   "title_alertReloads": {
+      "message": "Cuando una página es recargada"
+   },
+   "title_alerts": {
+      "message": "Ajustes de Alertas"
+   },
+   "title_alertsClaims": {
+      "message": "Reclamos"
+   },
+   "title_alertsEvents": {
+      "message": "Eventos"
+   },
+   "title_claims": {
+      "message": "Últimas Reclamaciones"
+   },
+   "title_donate": {
+      "message": "Métodos de Donación"
+   },
+   "title_events": {
+      "message": "Últimos Eventos"
+   },
+   "title_help": {
+      "message": "Ayuda"
+   },
+   "title_intro": {
+      "message": "Bienvenido"
+   },
+   "title_notifications": {
+      "message": "Notificaciones"
+   },
+   "title_settings": {
+      "message": "Ajustes Generales"
+   },
+   "translators_title": {
+      "message": "Traductores Voluntarios"
+   },
+   "type_drops": {
+      "message": "Drops"
+   },
+   "type_moments": {
+      "message": "Momentos"
+   },
+   "type_points": {
+      "message": "Puntos de Canal"
+   },
+   "type_predictions": {
+      "message": "Predicciones"
+   },
+   "type_raids": {
+      "message": "Raids"
+   },
+   "type_reloads": {
+      "message": "Recargas"
+   }
+}

@@ -1,0 +1,614 @@
+<h1><span class="text-ellipsis" data-i18n>title_alerts</span></h1>
+
+<h2 class="color color_events" data-i18n>title_alertsEvents</h2>
+
+<h3 class="icon icon_predictions" data-i18n>title_alertPredictionsStart</h3>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableVisual</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.predictionsStart.visual"
+        data-type="predictionsStart"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_visualDuration</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="5"
+        max="900"
+        step="5"
+        data-setting="alerts.predictionsStart.duration"
+        data-unit-time
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableSound</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.predictionsStart.sound"
+        data-type="predictionsStart"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_soundVolume</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        data-setting="alerts.predictionsStart.volume"
+        data-unit="%"
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_enableNative</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.predictionsStart.native"
+        data-type="predictionsStart"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_big-border setting_mb">
+  <button class="setting__button" id="settingTestPredictionsStart">
+    <span class="text-ellipsis" data-i18n>setting_testPredictionsStart</span>
+  </button>
+</div>
+
+<h3 class="icon icon_predictions" data-i18n>title_alertPredictionsResult</h3>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableVisual</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.predictionsResult.visual"
+        data-type="predictionsResult"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_visualDuration</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="5"
+        max="900"
+        step="5"
+        data-setting="alerts.predictionsResult.duration"
+        data-unit-time
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableSound</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.predictionsResult.sound"
+        data-type="predictionsResult"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_soundVolume</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        data-setting="alerts.predictionsResult.volume"
+        data-unit="%"
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_enableNative</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.predictionsResult.native"
+        data-type="predictionsResult"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_big-border setting_mb">
+  <button class="setting__button" id="settingTestPredictionsResult">
+    <span class="text-ellipsis" data-i18n>setting_testPredictionsResult</span>
+  </button>
+</div>
+
+<h3 class="icon icon_raids" data-i18n>title_alertRaids</h3>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableVisual</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.raids.visual"
+        data-type="raids"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_visualDuration</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="5"
+        max="900"
+        step="5"
+        data-setting="alerts.raids.duration"
+        data-unit-time
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableSound</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.raids.sound"
+        data-type="raids"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_soundVolume</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        data-setting="alerts.raids.volume"
+        data-unit="%"
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_enableNative</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.raids.native"
+        data-type="raids"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_big-border setting_mb">
+  <button class="setting__button" id="settingTestRaids">
+    <span class="text-ellipsis" data-i18n>setting_testRaids</span>
+  </button>
+</div>
+
+<h3 class="icon icon_reloads" data-i18n>title_alertReloads</h3>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableVisual</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.reloads.visual"
+        data-type="reloads"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_visualDuration</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="5"
+        max="900"
+        step="5"
+        data-setting="alerts.reloads.duration"
+        data-unit-time
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableSound</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.reloads.sound"
+        data-type="reloads"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_soundVolume</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        data-setting="alerts.reloads.volume"
+        data-unit="%"
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_enableNative</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.reloads.native"
+        data-type="reloads"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_big-border setting_mb">
+  <button class="setting__button" id="settingTestReloads">
+    <span class="text-ellipsis" data-i18n>setting_testReloads</span>
+  </button>
+</div>
+
+<h2 class="color color_claims" data-i18n>title_alertsClaims</h2>
+
+<h3 class="icon icon_drops" data-i18n>title_alertDrops</h3>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableVisual</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.drops.visual"
+        data-type="drops"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_visualDuration</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="5"
+        max="900"
+        step="5"
+        data-setting="alerts.drops.duration"
+        data-unit-time
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableSound</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.drops.sound"
+        data-type="drops"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_soundVolume</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        data-setting="alerts.drops.volume"
+        data-unit="%"
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_enableNative</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.drops.native"
+        data-type="drops"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_big-border setting_mb">
+  <button class="setting__button" id="settingTestDrops">
+    <span class="text-ellipsis" data-i18n>setting_testDrops</span>
+  </button>
+</div>
+
+<h3 class="icon icon_points" data-i18n>title_alertPoints</h3>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableVisual</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.points.visual"
+        data-type="points"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_visualDuration</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="5"
+        max="900"
+        step="5"
+        data-setting="alerts.points.duration"
+        data-unit-time
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableSound</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.points.sound"
+        data-type="points"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_soundVolume</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        data-setting="alerts.points.volume"
+        data-unit="%"
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_enableNative</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.points.native"
+        data-type="points"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_big-border setting_mb">
+  <button class="setting__button" id="settingTestPoints">
+    <span class="text-ellipsis" data-i18n>setting_testPoints</span>
+  </button>
+</div>
+
+<h3 class="icon icon_moments" data-i18n>title_alertMoments</h3>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableVisual</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.moments.visual"
+        data-type="moments"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_visualDuration</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="5"
+        max="900"
+        step="5"
+        data-setting="alerts.moments.duration"
+        data-unit-time
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_no-border">
+  <div class="setting__label" data-i18n>setting_enableSound</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.moments.sound"
+        data-type="moments"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_soundVolume</div>
+  <div class="setting__control">
+    <label class="range">
+      <span class="range__value" data-value></span>
+      <input
+        class="range__input"
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        data-setting="alerts.moments.volume"
+        data-unit="%"
+      />
+    </label>
+  </div>
+</div>
+
+<div class="setting">
+  <div class="setting__label" data-i18n>setting_enableNative</div>
+  <div class="setting__control">
+    <label class="switch switch_small">
+      <input
+        class="switch__input"
+        type="checkbox"
+        data-setting="alerts.moments.native"
+        data-type="moments"
+      />
+      <div class="switch__slider"></div>
+    </label>
+  </div>
+</div>
+
+<div class="setting setting_no-border setting_mbs">
+  <button class="setting__button" id="settingTestMoments">
+    <span class="text-ellipsis" data-i18n>setting_testMoments</span>
+  </button>
+</div>

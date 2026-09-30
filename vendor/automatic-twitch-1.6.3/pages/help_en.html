@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title class="notranslate" data-i18n>extension_title+—+title_help</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="/pages/help.css" />
+    <script type="text/javascript" src="/js/deps/not-jquery-noajax.min.js"></script>
+    <script type="text/javascript" src="/js/deps/ext-storage-manager.min.js"></script>
+    <script type="text/javascript" src="/pages/help.js"></script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=initTranslate"
+      defer
+    ></script>
+  </head>
+
+  <body class="wrapper" id="wrapper">
+    <header>
+      <div class="header-wrapper notranslate">
+        <h1 class="title">Help</h1>
+        <div class="ext-title">
+          <div data-i18n>extension_title</div>
+          <div
+            class="balloon balloon_tooltip balloon_right ml hidden"
+            id="translateGoogle"
+            data-balloon
+            data-balloon-tooltip
+          >
+            <button class="translate-google" id="translateGoogleBtn"></button>
+            <div class="balloon__content" data-balloon-content>
+              <div class="balloon__text" id="translateGoogleHint"></div>
+              <button class="balloon__close" data-balloon-action></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="menu__content" id="menuContent">
+        <button class="menu__toggler" id="menuContentToggler" aria-label="Toggle table of contents"></button>
+      </div>
+    </div>
+
+    <aside id="aside">
+      <nav id="nav">
+        <a class="heading-link heading-link_basics" href="#basics">Basics</a>
+        <a class="heading-link heading-link_alerts" href="#alerts">Alerts</a>
+        <a class="heading-link heading-link_history" href="#history">Claims History</a>
+        <a class="heading-link heading-link_settings" href="#settings">Settings</a>
+        <a class="heading-link heading-link_drops" href="#drops">Drops</a>
+        <a class="heading-link heading-link_moments" href="#moments">Moments</a>
+        <a class="heading-link heading-link_points" href="#points">Channel Points</a>
+        <a class="heading-link heading-link_events" href="#events">Events</a>
+        <a class="heading-link heading-link_errors" href="#errors">Information About Errors</a>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <section>
+        <h3 id="basics">Basics</h3>
+        <ul>
+          <li>
+            This extension will automatically claim your Drops, Channel Points and Moments. Just watch your favorite
+            streams, no need to set up anything.
+          </li>
+          <li>
+            You can always check claims history, the time of the last claims, as well as the total number of claimed
+            Drops, Points and Moments.
+            <span class="important"
+              >Note that the counters only show what is claimed by the extension itself and not automatically given to
+              you by Twitch (for example, Channel Points for participating in the Raid).</span
+            >
+          </li>
+          <li>
+            The extension keeps track of some events that occur on streams. You can set up alerts for different events
+            and view their history.
+          </li>
+          <li>
+            All your settings, statistics, claims and events history are synchronized between devices with browsers
+            where you are signed in to your account.
+          </li>
+          <li>
+            The extension also works in Twitch players opened in a popup window or embedded in another site. However,
+            some features may be limited.
+          </li>
+          <li class="important">
+            The extension performs its actions in the background without relying on the interface, so you can still see
+            notifications about available Drops, Moments or buttons for claiming Points. There is no point in clicking
+            on them.
+          </li>
+          <li class="important">
+            The browser may automatically interrupt streams playback, especially if they are in hidden tabs and with the
+            sound turned off. To make sure playback doesn't get interrupted, don't open too many tabs and keep your
+            stream in an active (not minimized) tab.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="alerts">Alerts</h3>
+        <ul>
+          <li>You can set up alerts when receiving Drops, Channel Points or Moments separately for each type.</li>
+          <li>
+            You can also separately turn on only the sound, the operating system alert, or the pop-up alert, or you can
+            turn it on all together.
+          </li>
+          <li>
+            You can immediately test alerts to decide on the settings.
+            <span class="important"
+              >Test alerts are included in the claims history, but do not affect the total counters.</span
+            >
+          </li>
+          <li>
+            Pop-up alerts are displayed on all pages on the Twitch site and are visible even in the player in full
+            screen mode.
+          </li>
+          <li>Alerts for different types of events are configured similarly.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="history">Claims History</h3>
+        <ul>
+          <li>
+            You can always check the claims history of Drops, Channel Points and Moments.
+            <span class="important"
+              >It only stores what is claimed by the extension itself, and not what is claimed by you manually or issued
+              automatically.</span
+            >
+          </li>
+          <li>You can filter the history by the type of rewards.</li>
+          <li class="important">
+            Due to storage limits, only the last 10 Drops, 10 Moments, and 20 Channel Points groups are included in the
+            history.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 id="settings">Settings</h3>
+        <p>
+          To improve your experience on the Twitch site, the extension offers additional features that you can always
+          toggle in the settings.
+        </p>
+
+        <h4 id="settings_raid-cancel">Channel Raid Prevention</h4>
+        <ul>
+          <li>The extension will prevent the transition to the Raided channel.</li>
+          <li>
+            In this case, the Raided page will be loaded for a short time and returned back. Thus, you will receive
+            bonus Points for participating in the Raid.
+          </li>
+        </ul>
+
+        <h4 id="settings_stream-preview">Stream Previews In The Channels Menu</h4>
+        <ul>
+          <li>
+            This feature will bring back the stream preview images displayed when you hover over the channels in the
+            side menu.
+          </li>
+          <li class="important">New previews are generated every 10 minutes, this time cannot be reduced.</li>
+        </ul>
+
+        <h4 id="settings_extensions-hide">Hiding Twitch Extensions</h4>
+        <ul>
+          <li>
+            With this feature, you can hide extensions that are overlaid on top of the video player (installed through
+            the Twitch site itself).
+          </li>
+        </ul>
+
+        <h4 id="settings_icon-swap">Tab Icon Swap</h4>
+        <ul>
+          <li>To always know if a stream playback is running in a minimized tab, you can enable this feature.</li>
+          <li>
+            The Twitch icon for tabs with an active player will turn red.
+            <span class="important"
+              >However, it will only change for live streams, not for video recordings or Hosted and Raided
+              streams.</span
+            >
+          </li>
+        </ul>
+
+        <h4 id="settings_pause-mouse">Player Playback Pause by Holding LMB</h4>
+        <ul>
+          <li>Hold the left mouse button on the player for half a second and release.</li>
+          <li>Playback will be paused.</li>
+          <li>To continue playback, simply click on the player as before.</li>
+        </ul>
+
+        <h4 id="settings_reload-integrity">Reloading the Page When Rewards Claiming Is Blocked</h4>
+        <ul>
+          <li>The extension will reload the page if it detects a block while claiming reward.</li>
+          <li class="important">In this case, the page will be reloaded no more than once every 10 minutes.</li>
+          <li>
+            You can learn more about the error and its solution in
+            <a href="#errors_integrity">the section below</a>.
+          </li>
+        </ul>
+
+        <h4 id="settings_reload-playback">Automatic Player Restart</h4>
+        <ul>
+          <li>
+            The extension will restart the player if it freezes or encounters an error. If the player fails to reload,
+            the entire page will be reloaded.
+          </li>
+          <li class="important">In this case, the page will be reloaded no more than once every 5 minutes.</li>
+          <li>
+            Even if you lose internet, all Twitch pages will be automatically reloaded some time after it appears again.
+          </li>
+          <li class="important">
+            This feature is experimental and may not work correctly in some cases. It will continue to improve with
+            updates.
+          </li>
+          <li>
+            You can learn more about the error and its solution in
+            <a href="#errors_playback">the section below</a>.
+          </li>
+        </ul>
+
+        <h4 id="settings_pause-prevent">Playback stopping prevention</h4>
+        <ul>
+          <li>Your browser may pause the video player if you leave a tab with a player, that is muted.</li>
+          <li>
+            The extension will unmute the video player for a second (while setting the volume to minimum) to prevent
+            this browser action.
+          </li>
+        </ul>
+
+        <h4 id="settings_playback-start">Automatic Playback Start</h4>
+        <ul>
+          <li>
+            If you open a stream in a new tab, the extension will automatically start playback by focusing it for a
+            short time.
+            <span class="important">You may see flickering at this moment.</span>
+          </li>
+          <li>
+            This feature only works for live streams and will not start playback for video recording or Hosted and
+            Raided streams.
+          </li>
+        </ul>
+
+        <h4 id="settings_discard-prevent">Tabs Discarding Prevention</h4>
+        <ul>
+          <li>
+            The browser has a mechanism that clears tabs that have not been used for a long time to save resources. This
+            feature will help you avoid discarding your Twitch tabs.
+          </li>
+        </ul>
+
+        <h4 id="settings_notif-alert">Show OS Alerts When a New Notification Arrives</h4>
+        <ul>
+          <li>
+            When you receive a new notification from a developer, an alert will be displayed in your operating system
+            notification center.
+          </li>
+        </ul>
+
+        <h4 id="settings_auto-points">Automatic Points Claim</h4>
+        <ul>
+          <li>The extension will automatically claim bonus Points for viewing all channels.</li>
+        </ul>
+
+        <h4 id="settings_auto-drops">Automatic Drops Claim</h4>
+        <ul>
+          <li>The extension will automatically claim Drops when their progress reaches 100%.</li>
+        </ul>
+
+        <h4 id="settings_auto-moments">Automatic Moments Claim</h4>
+        <ul>
+          <li>The extension will automatically claim Moments when watching streams.</li>
+        </ul>
+
+        <h4 id="settings_stats-reset">Extension Statistics Reset</h4>
+        <ul>
+          <li>
+            If necessary, you can reset the statistics of the extension by clicking on the appropriate button in the
+            settings.
+          </li>
+          <li class="important">In this case, the entire claims history and statistics will be completely cleared.</li>
+        </ul>
+
+        <h4 id="settings_ext-reset">Full Extension Reset</h4>
+        <ul>
+          <li>
+            If you encounter problems, you can reset the extension by clicking on the appropriate button in the
+            settings.
+          </li>
+          <li class="important">This will completely reset all your settings, claims history and statistics.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="drops">Drops</h3>
+        <p>
+          The extension automatically claims Drops earned by watching eligible streams.
+          <a href="https://help.twitch.tv/s/article/mission-based-drops#claimtime" target="_blank"
+            >Learn more about Drops.</a
+          >
+        </p>
+
+        <ul>
+          <li>
+            Just watch channels that are members of
+            <a href="https://www.twitch.tv/drops/campaigns" target="_blank">Drops campaigns</a>.
+          </li>
+          <li>
+            Upon reaching the required viewing time, the reward will be claimed automatically and the progress of
+            obtaining the next one, if any, will begin.
+          </li>
+          <li>
+            You can view the Drops progress and received rewards on the
+            <a href="https://www.twitch.tv/drops/inventory" target="_blank">inventory page</a>.
+          </li>
+          <li class="important">
+            Drops can be progressed only for one campaign (game) and only on one channel at a time.
+          </li>
+          <li class="important">
+            If multiple channels are open, Drops progress will start for the first opened channel. Upon receiving all of
+            its rewards, Drops progress will begin on the next opened channel.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="moments">Moments</h3>
+        <p>
+          The extension automatically claims Moments created while watching a stream. Moments are currently in beta and
+          available to a limited number of streamers.
+          <a href="https://help.twitch.tv/s/article/moments#earn" target="_blank">Learn more about Moments.</a>
+        </p>
+        <ul>
+          <li>Just watch channels that use this feature and get Twitch chat badges.</li>
+          <li class="important">
+            To claim a Moment, you must watch the stream at the same time the streamer creates a new Moment. If you
+            missed this moment even for a couple of seconds, you will no longer be able to get it, reloading the page
+            will not help.
+          </li>
+          <li class="important">
+            Also, sometimes a notification about a new Moment may not come, which means that the extension will not be
+            able to claim it. This error occurs on the Twitch side and cannot be fixed.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="points">Channel Points</h3>
+        <p>
+          The extension automatically claims Channel Points earned by watching streams.
+          <a href="https://help.twitch.tv/s/article/channel-points-guide#viewers" target="_blank"
+            >Learn more about Channel Points.</a
+          >
+        </p>
+
+        <ul>
+          <li>Just watch the streams, Points will be claimed automatically.</li>
+          <li>The time until you receive new Points and their amount depend on your subscription level.</li>
+          <li class="important">
+            You can only earn Points on two channels at the same time. If more than 2 channels are opened, Points will
+            be earned on those that were opened last. This limitation is imposed by Twitch itself and cannot be
+            bypassed.
+          </li>
+          <li class="important">
+            In the claims history and statistics, only Points received by the extension itself are displayed. Bonus
+            Points for watch streaks or participation in Raids do not fall there.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="events">Events</h3>
+        <ul>
+          <li>The extension automatically tracks some events that occur on the streams.</li>
+          <li>You can individually toggle alerts for each type of event to keep abreast of those that interest you.</li>
+          <li>The latest events are stored in the "Events History" section, where they can be filtered by type.</li>
+          <li class="important">
+            Due to storage limits, only the last 15 Predictions and 20 Raids are included in the history.
+          </li>
+        </ul>
+
+        <h4 id="events_predict-start">Prediction Start</h4>
+        <ul>
+          <li>An alert is shown when a Prediction starts on one of the streams you are watching.</li>
+          <li>This alert contains a Prediction title and possible outcomes.</li>
+          <li>You can open the Prediction in a separate tab by clicking on its title in an alert.</li>
+          <li>
+            Also, you can immediately open the Prediction in the pop-up right on top of the video player by clicking on
+            the "Open Prediction" button.
+          </li>
+        </ul>
+
+        <h4 id="events_predict-result">Prediction Result</h4>
+        <ul>
+          <li>An alert is shown at the end of a Prediction in which you participated.</li>
+          <li>This alert contains the amount of Points you have won or lost.</li>
+          <li>You can open the rewards menu in a separate tab by clicking on the Points number in an alert.</li>
+          <li>This alert will also be shown if the Prediction has been cancelled.</li>
+        </ul>
+
+        <h4 id="events_raid">Channel Raid</h4>
+        <ul>
+          <li>When a channel is Raided, an alert will be shown.</li>
+          <li>
+            This alert contains the name of the Raided channel. By clicking on the name, this channel can be opened in a
+            new tab.
+          </li>
+          <li>
+            This alert will also indicate if the transition to the channel was canceled (the feature to cancel the
+            transition is available in the extension settings).
+          </li>
+        </ul>
+
+        <h4 id="events_reload">Page Reload</h4>
+        <ul>
+          <li>If the extension forces a page reload, an alert will be shown.</li>
+          <li>The alert contains the address of the reloaded page and the reason for the reload.</li>
+          <li>
+            The reason for the reload may be one of
+            <a href="#errors">the errors</a> with Twitch.
+          </li>
+          <li>You can immediately turn off automatic reload by clicking on the button in this alert.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="errors">Information About Errors</h3>
+
+        <h4 id="errors_playback">Video Stream Playback Error</h4>
+        <p>
+          This error will occur if the extension detects a Twitch player freeze or errors while making requests to the
+          Twitch server.
+        </p>
+        <p>
+          The reason may be unstable Internet or its disruption on your side. In this case:
+          <b>check Internet connection</b> / <b>turn off the player's "Low Latency" mode</b>.
+        </p>
+        <p>
+          Also, the reason may be the temporary degradation of the Twitch servers. In this case:
+          <b>check the status</b> on the
+          <a href="https://twitter.com/TwitchSupport" target="_blank">Twitch Support Twitter</a>
+          / <b>just wait</b>.
+        </p>
+
+        <h4 id="errors_integrity">Reward Claiming Block</h4>
+        <p>
+          This error will occur if the extension determines that it is not possible to claim a reward, such as bonus
+          Points or a Drop.
+        </p>
+        <p>
+          This error occurs when the Twitch anti-bot system puts your IP address in a shadowban. There can be many
+          reasons for that, but the main ones are your IP change or a large number of requests from it. IP changes can
+          happen if you use a VPN, also some ISPs may change your IP on a regular basis. A large number of requests can
+          occur if there are many computers (with Twitch opened) on your IP, some ISPs connect many households to one
+          public IP.
+        </p>
+        <p class="important">
+          The extension itself cannot be the cause of this error! At the moment, this shadowban does not affect your
+          account and is automatically removed after a while.
+        </p>
+        <p>
+          In case of this error: <b>wait a couple of hours</b> / <b>change your IP address</b> /
+          <b>re-login on Twitch</b> / <b>clear browser cache and cookies</b>, <b>write to Twitch support</b>.
+        </p>
+      </section>
+    </main>
+
+    <div class="hidden" id="googleTranslateElement"></div>
+  </body>
+</html>

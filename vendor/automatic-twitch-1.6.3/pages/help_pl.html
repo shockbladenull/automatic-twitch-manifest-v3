@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title class="notranslate" data-i18n>extension_title+—+title_help</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="/pages/help.css" />
+    <script type="text/javascript" src="/js/deps/not-jquery-noajax.min.js"></script>
+    <script type="text/javascript" src="/js/deps/ext-storage-manager.min.js"></script>
+    <script type="text/javascript" src="/pages/help.js"></script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=initTranslate"
+      defer
+    ></script>
+  </head>
+
+  <body class="wrapper" id="wrapper">
+    <header>
+      <div class="header-wrapper notranslate">
+        <h1 class="title">Pomoc</h1>
+        <div class="ext-title">
+          <div data-i18n>extension_title</div>
+          <div
+            class="balloon balloon_tooltip balloon_right ml hidden"
+            id="translateGoogle"
+            data-balloon
+            data-balloon-tooltip
+          >
+            <button class="translate-google" id="translateGoogleBtn"></button>
+            <div class="balloon__content" data-balloon-content>
+              <div class="balloon__text" id="translateGoogleHint"></div>
+              <button class="balloon__close" data-balloon-action></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="menu__content" id="menuContent">
+        <button class="menu__toggler" id="menuContentToggler" aria-label="Toggle table of contents"></button>
+      </div>
+    </div>
+
+    <aside id="aside">
+      <nav id="nav">
+        <a class="heading-link heading-link_basics" href="#basics">Podstawy</a>
+        <a class="heading-link heading-link_alerts" href="#alerts">Alerty</a>
+        <a class="heading-link heading-link_history" href="#history">Historia Odbiorów</a>
+        <a class="heading-link heading-link_settings" href="#settings">Ustawienia</a>
+        <a class="heading-link heading-link_drops" href="#drops">Dropy</a>
+        <a class="heading-link heading-link_moments" href="#moments">Momenty</a>
+        <a class="heading-link heading-link_points" href="#points">Punkty Kanału</a>
+        <a class="heading-link heading-link_events" href="#events">Wydarzenia</a>
+        <a class="heading-link heading-link_errors" href="#errors">Informacje O Błędach</a>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <section>
+        <h3 id="basics">Podstawy</h3>
+        <ul>
+          <li>
+            To rozszerzenie automatycznie odbierze twoje Dropy, Punkty Kanału i Momenty. Po prostu oglądaj swoje
+            ulubione streamy, nie musisz niczego ustawiać.
+          </li>
+          <li>
+            Zawsze możesz sprawdzić historię odbiorów, czas ostatnich odbiorów, jak również całkowitą liczbę odebranych
+            Dropów, Punktów i Momentów.
+            <span class="important"
+              >Zauważ, że liczniki pokazują tylko to, co jest odebrane przez samo rozszerzenie, a nie automatycznie
+              przekazywane przez Twitch (na przykład: Punkty Kanału za udział w Raidzie).</span
+            >
+          </li>
+          <li>
+            Rozszerzenie śledzi niektóre zdarzenia, które dzieją się na streamach. Możesz ustawić alerty dla różnych
+            wydarzeń i wyświetlić ich historię.
+          </li>
+          <li>
+            Wszystkie ustawienia, statystyki, odbiory i historia zdarzeń są synchronizowane pomiędzy urządzeniami z
+            przeglądarkami, w których jesteś zalogowany na swoje konto.
+          </li>
+          <li>
+            Rozszerzenie działa również w odtwarzaczach Twitch otwartych w oknie wyskakującym lub osadzonych w innej
+            witrynie. Niektóre funkcje mogą być jednak ograniczone.
+          </li>
+          <li class="important">
+            Rozszerzenie wykonuje swoje działania w tle bez polegania na interfejsie, więc nadal możesz widzieć
+            powiadomienia o nowych Dropach, Momentach lub przyciski odbioru dodatkowych Punktów. Nie ma potrzeby w nie
+            klikać.
+          </li>
+          <li class="important">
+            Przeglądarka może automatycznie przerywać odtwarzanie streamów, szczególnie jeśli znajdują się na
+            nieaktywnych kartach i gdy dźwięk jest wyłączony. Aby upewnić się, że odtwarzanie nie zostanie przerwane,
+            nie otwieraj zbyt wielu kart i zachowaj stream w aktywnej (niezminimalizowanej) karcie.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="alerts">Alerty</h3>
+        <ul>
+          <li>Możesz ustawić alerty otrzymywania Dropów, Punktów Kanału lub Momentów oddzielnie dla każdego typu.</li>
+          <li>
+            Możesz również osobno włączyć tylko dźwięk, alert systemu operacyjnego lub wyskakujący alert, albo możesz
+            włączyć to wszystko naraz.
+          </li>
+          <li>
+            Możesz od razu przetestować alerty, aby decydować o ustawieniach.
+            <span class="important"
+              >Alerty testowe są zawarte w historii odbiorów, ale nie mają wpływu na liczniki.</span
+            >
+          </li>
+          <li>
+            Wyskakujące alerty są wyświetlane na wszystkich stronach witryny Twitch i są widoczne nawet w trybie
+            pełnoekranowym odtwarzacza.
+          </li>
+          <li>Alerty dla różnych rodzajów zdarzeń są konfigurowane podobnie.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="history">Historia Odbiorów</h3>
+        <ul>
+          <li>
+            Zawsze możesz sprawdzić historię odbioru Dropów, Punktów Kanału i Momentów.
+            <span class="important"
+              >Przechowuje ona tylko to, co jest odebrane przez samo rozszerzenie, a nie to, co odebrałeś ręcznie lub
+              przyznano automatycznie.</span
+            >
+          </li>
+          <li>Możesz filtrować historię według rodzaju nagród.</li>
+          <li class="important">
+            Ze względu na ograniczenia pamięci, tylko 10 ostatnich Dropów, 10 Momentów i 20 grup Punktów Kanału jest
+            uwzględnione w historii.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 id="settings">Ustawienia</h3>
+        <p>
+          Aby poprawić Twoje doświadczenia z używania strony Twitch, rozszerzenie oferuje dodatkowe funkcje, które
+          zawsze możesz włączyć w ustawieniach.
+        </p>
+
+        <h4 id="settings_raid-cancel">Zapobieganie Raidom Kanałów</h4>
+        <ul>
+          <li>Rozszerzenie zapobiega przeniesieniu na Raidowany kanał.</li>
+          <li>
+            W tym przypadku Raidowana strona zostanie załadowana na krótki moment i wróci do poprzedniej. Tak więc
+            otrzymasz Punkty bonusowe za udział w Raidzie.
+          </li>
+        </ul>
+
+        <h4 id="settings_stream-preview">Podglądy Streamów w Menu Kanałów</h4>
+        <ul>
+          <li>
+            Ta funkcja przywraca obrazki podglądu streama wyświetlane po najechaniu kursorem na kanały w menu bocznym.
+          </li>
+          <li class="important">Nowe podglądy są generowane co 10 minut, ten czas nie może zostać skrócony.</li>
+        </ul>
+
+        <h4 id="settings_extensions-hide">Ukrywanie Rozszerzeń Twitch</h4>
+        <ul>
+          <li>
+            Dzięki tej funkcji możesz ukryć rozszerzenia nakładane na odtwarzacz (zainstalowane przez sam Twitch).
+          </li>
+        </ul>
+
+        <h4 id="settings_icon-swap">Zmiana Ikony Karty</h4>
+        <ul>
+          <li>
+            Aby zawsze wiedzieć, czy odtwarzanie streama jest uruchomione w karcie zminimalizowanej, możesz włączyć tę
+            funkcję.
+          </li>
+          <li>
+            Ikona Twitch dla kart z aktywnym odtwarzaczem zmieni się na czerwono.
+            <span class="important"
+              >Jednakże zmieni się tylko dla transmisji na żywo, nie dla filmów lub streamów Hostowanych i
+              Raidowanych.</span
+            >
+          </li>
+        </ul>
+
+        <h4 id="settings_pause-mouse">Pauza Odtwarzacza poprzez Przytrzymanie LPM</h4>
+        <ul>
+          <li>Przytrzymaj lewy przycisk myszy na odtwarzaczu przez pół sekundy i zwolnij.</li>
+          <li>Odtwarzanie zostanie wstrzymane.</li>
+          <li>Aby kontynuować odtwarzanie, po prostu kliknij odtwarzacz jak poprzednio.</li>
+        </ul>
+
+        <h4 id="settings_reload-integrity">Odświeżanie Strony, Gdy Odbieranie Nagród Jest Zablokowane</h4>
+        <ul>
+          <li>Rozszerzenie odświeży stronę, jeśli wykryje blokadę podczas odbierania nagrody.</li>
+          <li class="important">W tym przypadku strona zostanie odświeżona nie częściej niż raz na 5 minut.</li>
+          <li>Dowiedz się więcej o błędzie i jego rozwiązaniu w <a href="#errors_integrity">sekcji poniżej</a>.</li>
+        </ul>
+
+        <h4 id="settings_reload-playback">Automatyczne Odświeżanie Odtwarzacza</h4>
+        <ul>
+          <li>
+            Rozszerzenie zrestartuje odtwarzacz, jeśli się zawiesi lub wystąpi błąd. Jeśli odtwarzacza nie uda się
+            odświeżyć, cała strona zostanie odświeżona.
+          </li>
+          <li class="important">W tym przypadku strona zostanie odświeżona nie częściej niż raz na 10 minut.</li>
+          <li>
+            Nawet jeśli stracisz połączenie internetowe, wszystkie strony Twitch zostaną automatycznie odświeżone po
+            chwili, gdy znów się pojawi.
+          </li>
+          <li class="important">
+            Ta funkcja jest eksperymentalna i w niektórych przypadkach może nie działać. Będzie się ona nadal poprawiać
+            wraz z aktualizacjami.
+          </li>
+          <li>Dowiedz się więcej o błędzie i jego rozwiązaniu w <a href="#errors_playback">sekcji poniżej</a>.</li>
+        </ul>
+
+        <h4 id="settings_pause-prevent">Zapobieganie zatrzymaniu odtwarzania</h4>
+        <ul>
+          <li>
+            Twoja przeglądarka może wstrzymać odtwarzacz, jeśli opuścisz kartę z odtwarzaczem, który jest wyciszony.
+          </li>
+          <li>
+            Rozszerzenie wyłączy wyciszenie odtwarzacza na sekundę (ustawi głośność na minimum), aby zapobiec takiej
+            akcji przeglądarki.
+          </li>
+        </ul>
+
+        <h4 id="settings_playback-start">Automatyczne Uruchomienie Odtwarzania</h4>
+        <ul>
+          <li>
+            Jeśli otworzysz stream w nowej karcie, rozszerzenie automatycznie rozpocznie odtwarzanie przez skupienie na
+            karcie na moment. <span class="important">Możesz zobaczyć wtedy migotanie.</span>
+          </li>
+          <li>
+            Ta funkcja działa tylko dla transmisji na żywo i nie rozpocznie odtwarzania dla filmów lub streamów
+            Hostowanych i Raidowanych.
+          </li>
+        </ul>
+
+        <h4 id="settings_discard-prevent">Zapobieganie Odrzucaniu Kart</h4>
+        <ul>
+          <li>
+            Przeglądarka posiada mechanizm, który czyści karty, które nie były używane od dłuższego czasu, by oszczędzać
+            zasoby. Ta funkcja pomoże uniknąć odrzucania Twoich kart Twitch.
+          </li>
+        </ul>
+
+        <h4 id="settings_notif-alert">Wyświetlaj Powiadomienia Systemowe, Gdy Pojawi Się Nowe Powiadomienie</h4>
+        <ul>
+          <li>
+            Kiedy otrzymasz nowe powiadomienie od dewelopera, w centrum powiadomień Twojego systemu operacyjnego pojawi
+            się powiadomienie.
+          </li>
+        </ul>
+
+        <h4 id="settings_auto-points">Automatyczne Odbieranie Punktów</h4>
+        <ul>
+          <li>Rozszerzenie automatycznie odbierze bonusowe Punkty za oglądanie wszystkich kanałów.</li>
+        </ul>
+
+        <h4 id="settings_auto-drops">Automatyczne Odbieranie Dropów</h4>
+        <ul>
+          <li>Rozszerzenie automatycznie odbierze Dropy, kiedy ich postęp osiągnie 100%.</li>
+        </ul>
+
+        <h4 id="settings_auto-moments">Automatyczne Odbieranie Momentów</h4>
+        <ul>
+          <li>Rozszerzenie automatycznie odbierze Momenty podczas oglądania streamów.</li>
+        </ul>
+
+        <h4 id="settings_stats-reset">Resetowanie Statystyk Rozszerzeń</h4>
+        <ul>
+          <li>
+            Jeśli to konieczne, możesz zresetować statystyki rozszerzenia, klikając odpowiedni przycisk w ustawieniach.
+          </li>
+          <li class="important">W tym przypadku cała historia odebrań i statystyki zostaną całkowicie wyczyszczone.</li>
+        </ul>
+
+        <h4 id="settings_ext-reset">Całkowite Resetowanie Rozszerzenia</h4>
+        <ul>
+          <li>
+            Jeśli napotkasz problemy, możesz zresetować rozszerzenie, klikając odpowiedni przycisk w ustawieniach.
+          </li>
+          <li class="important">
+            To spowoduje całkowite zresetowanie wszystkich ustawień, historii odbiorów i statystyk.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="drops">Dropy</h3>
+        <p>
+          Rozszerzenie automatycznie odbiera Dropy uzyskane przez oglądanie kwalifikujących się streamów.
+          <a href="https://help.twitch.tv/s/article/mission-based-drops#claimtime" target="_blank"
+            >Dowiedz się więcej o Dropach.</a
+          >
+        </p>
+
+        <ul>
+          <li>
+            Wystarczy oglądać kanały, które są członkami
+            <a href="https://www.twitch.tv/drops/campaigns" target="_blank">kampanii Dropów</a>.
+          </li>
+          <li>
+            Po osiągnięciu wymaganego czasu oglądania nagroda zostanie automatycznie odebrana i rozpocznie się postęp w
+            uzyskiwaniu następnej, jeśli jakaś jest.
+          </li>
+          <li>
+            Możesz zobaczyć postęp Dropów i otrzymane nagrody na
+            <a href="https://www.twitch.tv/drops/inventory" target="_blank">stronie ekwipunku</a>.
+          </li>
+          <li class="important">
+            Dropy mogą być nabijane tylko dla jednej kampanii (gry) i tylko na jednym kanale jednocześnie.
+          </li>
+          <li class="important">
+            Jeśli wiele kanałów jest otwartych, postęp Dropów rozpocznie się na pierwszym otwartym kanale. Po otrzymaniu
+            wszystkich nagród postęp Dropów rozpocznie się na następnym otwartym kanale.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="moments">Momenty</h3>
+        <p>
+          Rozszerzenie automatycznie odbiera Momenty utworzone podczas oglądania streama. Momenty są obecnie w wersji
+          beta i są dostępne dla ograniczonej liczby streamerów.
+          <a href="https://help.twitch.tv/s/article/moments#earn" target="_blank">Dowiedz się więcej o Momentach.</a>
+        </p>
+        <ul>
+          <li>Po prostu oglądaj kanały, które używają tej funkcji i otrzymuj odznaki czatu Twitch.</li>
+          <li class="important">
+            Aby otrzymać Moment, musisz oglądać stream w tym samym czasie, gdy streamer tworzy nowy Moment. Jeśli
+            przegapiłeś ten Moment nawet przez kilka sekund, nie będziesz już w stanie go uzyskać, odświeżenie strony
+            nie pomoże.
+          </li>
+          <li class="important">
+            Ponadto czasami powiadomienie o nowym Momencie może nie nadejść, co oznacza, że rozszerzenie nie będzie w
+            stanie go odebrać. Ten błąd występuje po stronie Twitch i nie może zostać naprawiony.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="points">Punkty Kanału</h3>
+        <p>
+          Rozszerzenie automatycznie odbiera Punkty Kanału uzyskane przez oglądanie streamów.
+          <a href="https://help.twitch.tv/s/article/channel-points-guide#viewers" target="_blank"
+            >Dowiedz się więcej o Punktach Kanału.</a
+          >
+        </p>
+
+        <ul>
+          <li>Po prostu oglądaj streamy, Punkty zostaną automatycznie odebrane.</li>
+          <li>Czas do otrzymania nowych Punktów i ich kwota zależy od Twojego poziomu subskrypcji.</li>
+          <li class="important">
+            Możesz gromadzić Punkty tylko na dwóch kanałach jednocześnie. Jeśli otworzy się więcej niż 2 kanały, Punkty
+            będą gromadzone na tych, które zostały otwarte jako ostatnie. To ograniczenie jest narzucane przez sam
+            Twitch i nie może zostać ominięte.
+          </li>
+          <li class="important">
+            W historii i statystykach odbiorów wyświetlane są tylko Punkty otrzymane przez samo rozszerzenie. Bonusowe
+            Punkty za ciągłość oglądania albo udział w Raidach nie zaliczają się tutaj.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="events">Wydarzenia</h3>
+        <ul>
+          <li>Rozszerzenie śledzi niektóre zdarzenia, które dzieją się na streamach.</li>
+          <li>
+            Możesz indywidualnie przełączać alerty dla każdego rodzaju wydarzenia, aby informować o tych, które Cię
+            interesują.
+          </li>
+          <li>
+            Najnowsze wydarzenia są przechowywane w sekcji "Historia Wydarzeń", gdzie mogą być filtrowane według typu.
+          </li>
+          <li class="important">
+            Ze względu na ograniczenia pamięci, tylko 15 ostatnich Przewidywań i 20 Raidów jest uwzględnianych w
+            historii.
+          </li>
+        </ul>
+
+        <h4 id="events_predict-start">Rozpoczęcie Przewidywania</h4>
+        <ul>
+          <li>Powiadomienie jest wyświetlane, gdy Przewidywanie zaczyna się na jednym z obserwowanych streamów.</li>
+          <li>Ten alert zawiera tytuł Przewidywania i możliwe rezultaty.</li>
+          <li>Przewidywanie można otworzyć w osobnej karcie, klikając na jego tytuł w alercie.</li>
+          <li>
+            Możesz również natychmiast otworzyć Przewidywanie w wyskakującym okienku po prawej stronie odtwarzacza,
+            klikając przycisk "Otwórz Przewidywanie".
+          </li>
+        </ul>
+
+        <h4 id="events_predict-result">Wynik Przewidywania</h4>
+        <ul>
+          <li>Alert jest wyświetlany na końcu Przewidywania, w którym uczestniczyłeś.</li>
+          <li>Ten alert zawiera ilość Punktów wygranych lub utraconych.</li>
+          <li>Możesz otworzyć menu nagród w osobnej karcie, klikając na liczbę Punktów w alercie.</li>
+          <li>Ten alert zostanie wyświetlony również, jeśli Przewidywanie zostało anulowane.</li>
+        </ul>
+
+        <h4 id="events_raid">Raid Kanału</h4>
+        <ul>
+          <li>Gdy kanał jest Raidowany, zostanie wyświetlony alert.</li>
+          <li>
+            Ten alert zawiera nazwę Raidowanego kanału. Klikając na nazwę, ten kanał można otworzyć w nowej karcie.
+          </li>
+          <li>
+            Ten alert wskaże również, czy przejście na kanał zostało anulowane (funkcja anulowania przejścia jest
+            dostępna w ustawieniach rozszerzenia).
+          </li>
+        </ul>
+
+        <h4 id="events_reload">Odświeżenie Strony</h4>
+        <ul>
+          <li>Jeśli rozszerzenie wymusi odświeżenie strony, zostanie wyświetlony alert.</li>
+          <li>Alert zawiera adres odświeżonej strony i powód odświeżenia.</li>
+          <li>Powodem odświeżenia może być jeden z <a href="#errors">błędów</a> w serwisie Twitch.</li>
+          <li>Możesz natychmiast wyłączyć automatyczne odświeżenie, klikając przycisk w tym alercie.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="errors">Informacje O Błędach</h3>
+
+        <h4 id="errors_playback">Błąd Odtwarzania Streama</h4>
+        <p>
+          Ten błąd wystąpi, jeśli rozszerzenie wykryje zacięcie lub błędy odtwarzacza Twitch podczas wysyłania zapytań
+          do serwera Twitch.
+        </p>
+        <p>
+          Powodem może być niestabilny Internet lub jego zakłócenie po stronie użytkownika. W takim przypadku:
+          <b>sprawdź połączenie internetowe</b> / <b>wyłącz tryb "Niskie opóźnienie" odtwarzacza</b>.
+        </p>
+        <p>
+          Powodem mogą być również tymczasowe problemy serwerów Twitcha. W takim przypadku: <b>sprawdź status</b> na
+          <a href="https://twitter.com/TwitchSupport" target="_blank">Twitch Support Twitter</a> /
+          <b>po prostu poczekaj</b>.
+        </p>
+
+        <h4 id="errors_integrity">Blokada Odbierania Nagród</h4>
+        <p>
+          Ten błąd wystąpi, jeśli rozszerzenie określi, że nie można odebrać nagród, takich jak bonusowe Punkty lub
+          Dropy.
+        </p>
+        <p>
+          Ten błąd występuje, gdy system antybotowy Twitch nałoży shadowban na Twój adres IP. Może być wiele powodów ku
+          temu, ale główne to zmiana Twojego adresu IP lub duża liczba żądań z Twojego adresu. Zmiany adresu IP mogą
+          nastąpić, jeśli korzystasz z VPN; również niektórzy dostawcy usług internetowych mogą zmieniać Twój adres IP
+          regularnie. Duża liczba żądań może wystąpić, jeśli w Twoim IP jest wiele komputerów (z otwartym Twitchem),
+          niektórzy dostawcy łączą wiele gospodarstw domowych z jednym publicznym IP.
+        </p>
+        <p class="important">
+          Samo rozszerzenie nie może być przyczyną tego błędu! Obecnie taki shadowban nie ma wpływu na Twoje konto i
+          jest automatycznie usuwany po pewnym czasie.
+        </p>
+        <p>
+          W przypadku takiego błędu: <b>zaczekaj kilka godzin</b> / <b>zmień swój adres IP</b> /
+          <b>zaloguj się ponownie na Twitchu</b> / <b>wyczyść pamięć podręczną przeglądarki i ciasteczka</b>,
+          <b>napisz do pomocy technicznej Twitch</b>.
+        </p>
+      </section>
+    </main>
+
+    <div class="hidden" id="googleTranslateElement"></div>
+  </body>
+</html>

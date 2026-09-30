@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title data-i18n>extension_name</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="/popup/popup.css" />
+    <script type="text/javascript" src="/js/deps/not-jquery-noajax.min.js"></script>
+    <script type="text/javascript" src="/js/deps/ext-storage-manager.min.js"></script>
+    <script type="text/javascript" src="/js/deps/ext-single-page-opener.min.js"></script>
+    <script type="text/javascript" src="/js/deps/ebnull-notifier.min.js"></script>
+    <script type="text/javascript" src="/popup/popup.js"></script>
+  </head>
+
+  <body class="wrapper" id="wrapper">
+    <header>
+      <label class="switch switch_main">
+        <input class="switch__input" type="checkbox" tabindex="1" id="switchMain" />
+        <div class="switch__slider"></div>
+        <span class="switch__on" data-i18n>settings_enable</span>
+        <span class="switch__off" data-i18n>settings_disable</span>
+      </label>
+
+      <div class="header__text" data-i18n>extension_name</div>
+    </header>
+
+    <main>
+      <section class="stats">
+        <div class="stat stat_th">
+          <span data-i18n>stat_claims</span>
+          <span data-i18n>stat_date</span>
+        </div>
+        <div class="stat">
+          <div class="balloon balloon_tooltip" data-balloon data-balloon-tooltip data-balloon-hover>
+            <strong class="stat__big" id="statPoints"></strong>
+            <div class="balloon__content balloon__content_oneliner balloon__content_nomouse" data-balloon-content>
+              <div class="balloon__text" data-i18n>type_points</div>
+              <div class="balloon__text stat__disabled" data-i18n>stat_disabled</div>
+            </div>
+          </div>
+          <strong id="statDatePoints"></strong>
+        </div>
+        <div class="stat">
+          <div class="balloon balloon_tooltip" data-balloon data-balloon-tooltip data-balloon-hover>
+            <strong class="stat__big stat__big_drops" id="statDrops"></strong>
+            <div class="balloon__content balloon__content_oneliner balloon__content_nomouse" data-balloon-content>
+              <div class="balloon__text" data-i18n>type_drops</div>
+              <div class="balloon__text stat__disabled" data-i18n>stat_disabled</div>
+            </div>
+          </div>
+          <strong id="statDateDrops"></strong>
+        </div>
+        <div class="stat stat_hidden" id="statMomentsWrapper">
+          <div class="balloon balloon_tooltip" data-balloon data-balloon-tooltip data-balloon-hover>
+            <strong class="stat__big stat__big_moments" id="statMoments"></strong>
+            <div class="balloon__content balloon__content_oneliner balloon__content_nomouse" data-balloon-content>
+              <div class="balloon__text" data-i18n>type_moments</div>
+              <div class="balloon__text stat__disabled" data-i18n>stat_disabled</div>
+            </div>
+          </div>
+          <strong id="statDateMoments"></strong>
+        </div>
+      </section>
+
+      <section class="menu">
+        <button class="menu__item menu__item_alerts" id="popupOpenAlerts">
+          <span class="text-ellipsis" data-i18n>menu_alerts</span>
+        </button>
+        <button class="menu__item menu__item_claims" id="popupOpenClaims">
+          <span class="text-ellipsis" data-i18n>menu_claims</span>
+        </button>
+        <button class="menu__item menu__item_settings hint-new" id="popupOpenSettings">
+          <span class="text-ellipsis" data-i18n>menu_settings</span>
+        </button>
+        <button class="menu__item menu__item_events" id="popupOpenEvents">
+          <span class="text-ellipsis" data-i18n>menu_events</span>
+        </button>
+      </section>
+
+      <section class="offer-block" id="rateOffer">
+        <button id="rateOfferClose" class="btn-close offer-block__close"></button>
+        <p data-i18n>offer_rateTitle</p>
+        <p>
+          <a id="elRateOffer" class="offer-block__link offer-block__link_active" href="#" target="_blank" data-i18n
+            >offer_rateLink</a
+          >
+          <span data-i18n>offer_rateText</span>
+        </p>
+      </section>
+      <section class="offer-block" id="patreonOffer">
+        <button id="patreonOfferClose" class="btn-close offer-block__close"></button>
+        <p data-i18n>offer_patreonTitle</p>
+        <p>
+          <span data-i18n>offer_patreonText</span>
+          <a id="elPatreonOffer" class="offer-block__link" href="#" target="_blank">Patreon</a>
+          <a id="elBoostyOffer" class="offer-block__link" href="#" target="_blank">Boosty</a>
+        </p>
+      </section>
+
+      <section class="notifications" id="notifications" tabindex="0">
+        <div class="notifications__show">
+          <span data-i18n>notifs_open</span>
+        </div>
+        <div class="notifications__header">
+          <div class="notifications__title" data-i18n>notifs_title</div>
+          <div class="notifications__info" id="notificationsInfo">
+            <div class="notifs-info notifs-info_unread" id="notificationsCount"></div>
+            <div class="notifs-info notifs-info_unread" data-i18n>notifs_unread</div>
+            <div class="notifs-info notifs-info_read" data-i18n>notifs_read</div>
+          </div>
+        </div>
+        <div class="notifications__content" id="notificationsContent"></div>
+      </section>
+
+      <section class="offer-block offer-block_locale" id="translateOffer">
+        <button id="translateOfferClose" class="btn-close offer-block__close"></button>
+        <a id="elTranslateOffer" href="#" target="_blank">
+          <span>Help translate this extension into your language!</span>
+          <img src="/img/crowdin-badge.svg" alt="Crowdin" />
+        </a>
+      </section>
+
+      <ul class="links">
+        <li>
+          <button id="elOpenHelp" class="help-link">
+            <span class="text-ellipsis" data-i18n>help_title</span>
+          </button>
+        </li>
+        <li>
+          <a id="elReviews" href="#" target="_blank"><span class="text-ellipsis" data-i18n>links_reviews</span></a>
+        </li>
+        <li>
+          <a id="elSupport" href="#" target="_blank"><span class="text-ellipsis" data-i18n>links_support</span></a>
+        </li>
+      </ul>
+
+      <footer>
+        <div class="footer-wrapper footer-wrapper_separate">
+          <a class="footer-link-wrapper" href="#" target="_blank" id="linkOpenDiscord">
+            <span class="text-ellipsis" data-i18n>menu_support</span>
+
+            <div class="footer-link footer-link_discord">
+              <img src="/img/discord-icon.svg" alt="EbNull Discord" />
+            </div>
+          </a>
+
+          <button class="menu__item menu__item_donate" id="popupOpenDonate">
+            <span class="text-ellipsis" data-i18n>menu_donate</span>
+          </button>
+        </div>
+        <div class="footer-wrapper">
+          <a class="footer-link footer-link_ebnull" href="#" target="_blank" id="linkOpenEbnull">
+            <img src="/img/ebnull-prod.png" alt="EbNull Production" />
+          </a>
+
+          <button id="elOpenContribs" class="contribs-link hint-new">
+            <span class="text-ellipsis" data-i18n>contributors_title</span>
+          </button>
+        </div>
+        <div class="footer-wrapper">
+          <div class="footer-copy">
+            <span id="version"></span>
+            <span>&copy;</span>
+            <span data-i18n>extension_name</span>
+          </div>
+        </div>
+      </footer>
+
+      <div id="popup" class="popup">
+        <button id="popupClose" class="btn-close popup__close"></button>
+        <div id="popupContent" class="popup__content">{load failed}</div>
+      </div>
+    </main>
+  </body>
+</html>

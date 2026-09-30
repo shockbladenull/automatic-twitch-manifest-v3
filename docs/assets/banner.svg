@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
+  <title id="title">Automatic Twitch — rewards on autopilot</title>
+  <desc id="desc">Watch the stream. Let Automatic Twitch claim earned Drops and bonus Channel Points.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#211b3e"/><stop offset="1" stop-color="#0d111a"/></linearGradient>
+    <linearGradient id="accent" x2="1" y2="1"><stop stop-color="#bcabff"/><stop offset="1" stop-color="#9476ed"/></linearGradient>
+  </defs>
+  <rect width="1280" height="340" rx="24" fill="url(#bg)"/>
+  <circle cx="1090" cy="170" r="245" fill="none" stroke="#b39aff" stroke-opacity=".06"/>
+  <circle cx="1090" cy="170" r="175" fill="none" stroke="#b39aff" stroke-opacity=".06"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <text x="60" y="64" fill="#bfb2ec" font-size="14" font-weight="600" letter-spacing="3">REWARDS ON AUTOPILOT</text>
+    <text x="56" y="146" fill="#f5f2ff" font-size="65" font-weight="700" letter-spacing="-2">Watch. Earn.</text>
+    <text x="56" y="218" fill="url(#accent)" font-size="65" font-weight="700" letter-spacing="-2">Claimed.</text>
+    <text x="60" y="265" fill="#b7b6c8" font-size="20">Watch the stream. We'll handle the claims.</text>
+    <text x="60" y="308" fill="#817d9b" font-size="13" font-weight="600" letter-spacing="2">DROPS / CHANNEL POINTS / CLAIM HISTORY</text>
+    <g transform="translate(778 48)">
+      <rect width="438" height="244" rx="18" fill="#1b1b2e" stroke="#3c3659"/>
+      <text x="24" y="36" fill="#f2edff" font-size="16" font-weight="600">Automatic Twitch</text>
+      <circle cx="341" cy="30" r="4" fill="#8ce2bd"/>
+      <text x="353" y="35" fill="#8ce2bd" font-size="12">Enabled</text>
+      <path d="M0 54H438" stroke="#3c3659"/>
+      <rect x="20" y="73" width="398" height="63" rx="10" fill="#29253f"/>
+      <path d="M42 92H60V97H65V106H60V120H42V106H37V97H42ZM38 106H64M51 92V120" fill="none" stroke="#bba5ff" stroke-width="2" stroke-linejoin="round"/>
+      <text x="82" y="100" fill="#ebe4ff" font-size="15" font-weight="600">Twitch Drop</text>
+      <text x="82" y="121" fill="#a6a0ba" font-size="12">Reward earned. Claim complete.</text>
+      <path d="M376 100L383 107L395 94" fill="none" stroke="#8ce2bd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="20" y="148" width="398" height="63" rx="10" fill="#222533"/>
+      <circle cx="51" cy="179" r="13" fill="none" stroke="#8ce2bd" stroke-width="2"/>
+      <path d="M51 171V187M43 179H59" stroke="#8ce2bd" stroke-width="2" stroke-linecap="round"/>
+      <text x="82" y="175" fill="#ebe4ff" font-size="15" font-weight="600">Channel Points</text>
+      <text x="82" y="196" fill="#a6a0ba" font-size="12">Bonus collected. Back to the stream.</text>
+      <path d="M376 175L383 182L395 169" fill="none" stroke="#8ce2bd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="24" y="231" fill="#817d9b" font-size="11" letter-spacing="1.2">LESS CLICKING. MORE WATCHING.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title class="notranslate" data-i18n>extension_title+—+title_help</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="/pages/help.css" />
+    <script type="text/javascript" src="/js/deps/not-jquery-noajax.min.js"></script>
+    <script type="text/javascript" src="/js/deps/ext-storage-manager.min.js"></script>
+    <script type="text/javascript" src="/pages/help.js"></script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=initTranslate"
+      defer
+    ></script>
+  </head>
+
+  <body class="wrapper" id="wrapper">
+    <header>
+      <div class="header-wrapper notranslate">
+        <h1 class="title">Ayuda</h1>
+        <div class="ext-title">
+          <div data-i18n>extension_title</div>
+          <div
+            class="balloon balloon_tooltip balloon_right ml hidden"
+            id="translateGoogle"
+            data-balloon
+            data-balloon-tooltip
+          >
+            <button class="translate-google" id="translateGoogleBtn"></button>
+            <div class="balloon__content" data-balloon-content>
+              <div class="balloon__text" id="translateGoogleHint"></div>
+              <button class="balloon__close" data-balloon-action></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="menu__content" id="menuContent">
+        <button class="menu__toggler" id="menuContentToggler" aria-label="Toggle table of contents"></button>
+      </div>
+    </div>
+
+    <aside id="aside">
+      <nav id="nav">
+        <a class="heading-link heading-link_basics" href="#basics">Básicos</a>
+        <a class="heading-link heading-link_alerts" href="#alerts">Alertas</a>
+        <a class="heading-link heading-link_history" href="#history">Historial de Reclamaciones</a>
+        <a class="heading-link heading-link_settings" href="#settings">Ajustes</a>
+        <a class="heading-link heading-link_drops" href="#drops">Drops</a>
+        <a class="heading-link heading-link_moments" href="#moments">Momentos</a>
+        <a class="heading-link heading-link_points" href="#points">Puntos de Canal</a>
+        <a class="heading-link heading-link_events" href="#events">Eventos</a>
+        <a class="heading-link heading-link_errors" href="#errors">Información sobre Errores</a>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <section>
+        <h3 id="basics">Conocimientos Básicos</h3>
+        <ul>
+          <li>
+            Esta extensión reclamará automáticamente tus Drops, Puntos de Canal y Momentos. Solamente tienes que ver tus
+            transmisiones favoritas, sin necesidad de configurar nada.
+          </li>
+          <li>
+            Siempre podrás comprobar el historial de reclamaciones, el momento de las últimas reclamaciones, así como el
+            número total de Drops reclamados, Puntos y Momentos.
+            <span class="important"
+              >Ten en cuenta que los contadores solo muestran lo reclamado por la propia extensión y no lo reclamado
+              automáticamente por Twitch (por ejemplo, Puntos de Canal por participar en el Raid).</span
+            >
+          </li>
+          <li>
+            La extensión hace un seguimiento de algunos eventos que ocurren en las transmisiones. Puedes configurar
+            alertas para diferentes eventos y ver su historial.
+          </li>
+          <li>
+            Todos sus ajustes, estadísticas, reclamos e historial de eventos están sincronizados entre dispositivos en
+            navegadores donde se ha iniciado sesión en su cuenta.
+          </li>
+          <li>
+            La extensión también funciona en reproductores de Twitch abiertos en una ventana emergente o añadida en otro
+            sitio. Sin embargo, algunas características pueden estar limitadas.
+          </li>
+          <li class="important">
+            La extensión realiza sus acciones en segundo plano sin depender de la interfaz, para que puedas ver las
+            notificaciones sobre nuevos Drops, Momentos o botones para ganar Puntos. No sirve de nada hacer clic en
+            ellos.
+          </li>
+          <li class="important">
+            El navegador ocasionalmente puede interrumpir la reproducción de la transmisión, especialmente si están en
+            pestañas ocultas y con el sonido apagado. Para asegurarse de que la reproducción no se interrumpa, asegúrese
+            de no abrir demasiadas pestañas y mantenga su transmisión en una pestaña activa (no minimizada).
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="alerts">Alertas</h3>
+        <ul>
+          <li>Puedes configurar notificaciones al recibir Drops, Puntos de Canal o Momentos por separado.</li>
+          <li>
+            También puede encender por separado solo el sonido, la notificación del sistema operativo, la notificación
+            emergente; o puede encender todo juntos.
+          </li>
+          <li>
+            Puedes probar inmediatamente las alertas para decidir sobre los ajustes.
+            <span class="important"
+              >Las alertas de prueba están incluidas en el historial de reclamaciones, pero no afectan a los contadores
+              totales.</span
+            >
+          </li>
+          <li>
+            Las alertas se muestran en todas las páginas del sitio web de Twitch y se muestran incluso en el modo de
+            pantalla completa.
+          </li>
+          <li>Las alertas para diferentes tipos de eventos se configuran de forma similar.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="history">Historial de Reclamaciones</h3>
+        <ul>
+          <li>
+            Siempre puedes comprobar el historial de reclamaciones de Drops, Puntos de Canal y Momentos.
+            <span class="important"
+              >Solo almacena lo reclamado por la extensión en sí, y no lo reclamado por ti manualmente o emitido
+              automáticamente.</span
+            >
+          </li>
+          <li>Puedes filtrar el historial por el tipo de recompensas.</li>
+          <li class="important">
+            Debido a los límites de almacenamiento, solo los últimos 10 Drops, 10 Momentos y 20 Puntos de Canal están
+            incluidos en el historial.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 id="settings">Ajustes</h3>
+        <p>
+          Para mejorar tu experiencia en el sitio de Twitch, la extensión ofrece características adicionales que siempre
+          puedes cambiar en los ajustes.
+        </p>
+
+        <h4 id="settings_raid-cancel">Prevención de Raid en canales</h4>
+        <ul>
+          <li>La extensión impedirá la transición al canal Raideado.</li>
+          <li>
+            En este caso, la página Raideada se cargará durante un corto período de tiempo y se devolverá de nuevo. Por
+            lo tanto, usted recibirá Puntos Adicionales por participar en el Raideo.
+          </li>
+        </ul>
+
+        <h4 id="settings_stream-preview">Vista Previa de Transmisiones en el Menú de Canales</h4>
+        <ul>
+          <li>
+            Esta característica traerá de vuelta las imágenes de vista previa de las transmisiones mostradas cuando pase
+            el cursor sobre los canales en el menú lateral.
+          </li>
+          <li class="important">Nuevas vistas previas se generan cada 10 minutos, esta vez no se puede reducir.</li>
+        </ul>
+
+        <h4 id="settings_extensions-hide">Ocultar Extensiones de Twitch</h4>
+        <ul>
+          <li>
+            Con esta función, puede ocultar las extensiones que se superponen en la parte superior del reproductor de
+            vídeo (instaladas a través del propio sitio Twitch).
+          </li>
+        </ul>
+
+        <h4 id="settings_icon-swap">Intercambio de Ícono de Pestaña</h4>
+        <ul>
+          <li>
+            Para saber siempre si la reproducción de la transmisión se está ejecutando en una pestaña minimizada, puede
+            habilitar esta función.
+          </li>
+          <li>
+            El icono de Twitch para pestañas con un reproductor activo se volverá rojo.
+            <span class="important"
+              >Sin embargo, solo cambiará para transmisiones en vivo, no para grabaciones de vídeo o transmisiones
+              Hosteados o Raideados.</span
+            >
+          </li>
+        </ul>
+
+        <h4 id="settings_pause-mouse">Pausa del reproductor manteniendo pulsado el botón izquierdo del ratón</h4>
+        <ul>
+          <li>Mantenga pulsado el botón izquierdo del ratón sobre el reproductor durante medio segundo y suéltelo.</li>
+          <li>La reproducción se detendrá.</li>
+          <li>Para continuar la reproducción, simplemente haga clic en el reproductor, como antes.</li>
+        </ul>
+        <h4 id="settings_reload-integrity">Recargar la Página Cuando la Reclamación de Recompensas Está Bloqueada</h4>
+        <ul>
+          <li>La extensión recargará la página si detecta un bloqueo mientras reclama la recompensa.</li>
+          <li class="important">En este caso, la página se recargará no más de una vez cada 5 minutos.</li>
+          <li>
+            Puede obtener más información sobre el error y su solución en
+            <a href="#errors_integrity">la sección siguiente</a>.
+          </li>
+        </ul>
+
+        <h4 id="settings_reload-playback">Reinicio Automático del Reproductor</h4>
+        <ul>
+          <li>
+            La extensión reiniciará el reproductor si se congela o se encuentra un error. Si el reproductor no se vuelve
+            a cargar, la página entera se volverá a cargar.
+          </li>
+          <li class="important">En este caso, la página se recargará no más de una vez cada 10 minutos.</li>
+          <li>
+            Incluso si pierdes Internet, todas las páginas de Twitch se recargarán automáticamente un tiempo después de
+            que aparezca de nuevo.
+          </li>
+          <li class="important">
+            Esta función es experimental y es posible que no funcione correctamente en algunos casos. Continuará
+            mejorando con las actualizaciones.
+          </li>
+          <li>
+            Puede obtener más información sobre el error y su solución en
+            <a href="#errors_playback">la sección siguiente</a>.
+          </li>
+        </ul>
+
+        <h4 id="settings_pause-prevent">Prevención de Detención de la Reproducción</h4>
+        <ul>
+          <li>Su navegador puede pausar el reproductor de video si deja una pestaña con un reproductor silenciado.</li>
+          <li>
+            La extensión reactivará el reproductor de video por un segundo (mientras ajusta el volumen al mínimo) para
+            evitar esta acción del navegador.
+          </li>
+        </ul>
+
+        <h4 id="settings_playback-start">Inicio de Reproducción Automático</h4>
+        <ul>
+          <li>
+            Si abre una transmisión en una nueva pestaña, la extensión iniciará automáticamente la reproducción
+            centrándola durante un corto tiempo.
+            <span class="important">Podrías ver un parpadeo en este momento.</span>
+          </li>
+          <li>
+            Esta característica solo funciona para transmisiones en vivo y no iniciará la reproducción para la grabación
+            de vídeo o para transmisiones Hosteadas o Raideadas.
+          </li>
+        </ul>
+
+        <h4 id="settings_discard-prevent">Prevención de Descartes de Pestañas</h4>
+        <ul>
+          <li>
+            El navegador tiene un mecanismo que borra pestañas que no han sido utilizadas durante mucho tiempo para
+            ahorrar recursos. Esta función te ayudará a evitar descartar tus pestañas de Twitch.
+          </li>
+        </ul>
+
+        <h4 id="settings_notif-alert">Mostrar Alertas de OS cuando una Nueva Notificación Llega</h4>
+        <ul>
+          <li>
+            Cuando reciba una nueva notificación de un desarrollador, se mostrará una alerta en el centro de
+            notificación de su sistema operativo.
+          </li>
+        </ul>
+
+        <h4 id="settings_auto-points">Reclamar Puntos de Canal Automática</h4>
+        <ul>
+          <li>La extensión reclamará automáticamente Puntos de bonificación por ver todos los canales.</li>
+        </ul>
+
+        <h4 id="settings_auto-drops">Reclamación de Drops Automática</h4>
+        <ul>
+          <li>La extensión reclamará automáticamente Drops cuando su progreso alcance el 100%.</li>
+        </ul>
+
+        <h4 id="settings_auto-moments">Reclamación de Momentos Automática</h4>
+        <ul>
+          <li>La extensión automáticamente reclama los Momentos creados mientras miras una transmición.</li>
+        </ul>
+
+        <h4 id="settings_stats-reset">Reinicio de Estadísticas de la Extensión</h4>
+        <ul>
+          <li>
+            Si es necesario, puedes reiniciar las estadísticas de la extensión haciendo clic en el botón correspondiente
+            en los ajustes.
+          </li>
+          <li class="important">
+            En este caso, todo el historial de reclamaciones y estadísticas será completamente borrado.
+          </li>
+        </ul>
+
+        <h4 id="settings_ext-reset">Restablecer Extensión</h4>
+        <ul>
+          <li>
+            Si encuentra problemas, puede restablecer la extensión haciendo clic en el botón apropiado en la
+            configuración.
+          </li>
+          <li class="important">
+            Esto restablecerá por completo todos sus ajustes, historial de reclamaciones y estadísticas.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="drops">Drops</h3>
+        <p>
+          La extensión reclama automáticamente los Drops obtenidos al ver las transmisiones elegibles.
+          <a href="https://help.twitch.tv/s/article/mission-based-drops#claimtime" target="_blank"
+            >Aprende más sobre los Drops.</a
+          >
+        </p>
+
+        <ul>
+          <li>
+            Mira canales que son miembros de
+            <a href="https://www.twitch.tv/drops/campaigns" target="_blank"> las campañas de Drops</a>.
+          </li>
+          <li>
+            Al llegar al tiempo de visualización requerido, la recompensa se reclamará automáticamente y el progreso de
+            obtener la siguiente, si la hay, empezará.
+          </li>
+          <li>
+            Puedes ver el progreso de los Drops y las recompensas recibidas en la
+            <a href="https://www.twitch.tv/drops/inventory" target="_blank">página de inventario</a>.
+          </li>
+          <li class="important">
+            Los drops solo se pueden procesar para una campaña (juego) y solo un canal a la vez.
+          </li>
+          <li class="important">
+            Si hay múltiples canales abiertos, el progreso de los Drops comenzara en primer canal abierto. Al recibir
+            todas las recompensas, el progreso de Drops comenzará en el siguiente canal abierto.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="moments">Momentos</h3>
+        <p>
+          La extensión automáticamente reclama los Momentos creados mientras miras una transmisión. Los Momentos están
+          actualmente en beta y solo disponibles a una cantidad limitada de streamers.
+          <a href="https://help.twitch.tv/s/article/moments#earn" target="_blank">Aprende más sobre los Momentos.</a>
+        </p>
+        <ul>
+          <li>Solo mira canales que usen esta función y consigue insignias del chat de Twitch.</li>
+          <li class="important">
+            Para reclamar un Momento, debes mirar la transmisión a la misma vez que el streamer crea un nuevo Momento.
+            Si te pierdes el Momento, aunque sea por un par de segundos, ya no podrás obtenerlo, recargar la página no
+            ayudará.
+          </li>
+          <li class="important">
+            Además, puede que algunas veces la notificación de un nuevo Momento no llegue, lo que significa que la
+            extensión no puede reclamarlo. Este error ocurre en el lado de Twitch y no se puede solucionar.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="points">Puntos de Canal</h3>
+        <p>
+          La extensión reclamará automáticamente Puntos de Canal conseguidor por mirar las transmisiones.
+          <a href="https://help.twitch.tv/s/article/channel-points-guide#viewers" target="_blank"
+            >Aprender más sobre los Puntos de Canal</a
+          >
+        </p>
+
+        <ul>
+          <li>Solamente mira las transmisiones, los Puntos se reclamarán automáticamente.</li>
+          <li>El tiempo hasta que recibas nuevos Puntos y su cantidad depende de tu nivel de suscripción.</li>
+          <li class="important">
+            Solo puedes ganar Puntos en 2 canales a la misma vez. Si más de 2 canales están abiertos, se reclamarán los
+            Puntos de los que se abrieron en último lugar. Esta limitación es impuesta por el propio Twitch y no se
+            puede burlar.
+          </li>
+          <li class="important">
+            En el historial de reclamaciones y estadísticas, solo se muestran los Puntos recibidos por la extensión. Los
+            Puntos Adiciones por mirar rachas o participar en Raideos no se muestran ahí.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="events">Eventos</h3>
+        <ul>
+          <li>La extensión seguirá automáticamente algunos eventos que ocurran en las transmisiones.</li>
+          <li>
+            Puedes alternar individualmente las alertas para cada tipo de evento para mantenerte al tanto de lo que te
+            interesa.
+          </li>
+          <li>
+            Los últimos eventos son almacenados en la sección de "Historial De Eventos", donde lo puedes filtrar por
+            tipo.
+          </li>
+          <li class="important">
+            Debido a las limitaciones de almacenamiento, solo las últimas 15 Predicciones y 20 Raids son incluidas en el
+            historial.
+          </li>
+        </ul>
+
+        <h4 id="events_predict-start">Inicio de la Predicción</h4>
+        <ul>
+          <li>Una alerta aparece cuando empieza una Predicción en una de las transmisiones que estás viendo.</li>
+          <li>Esta alerta contiene un título de Predicción y posibles resultados.</li>
+          <li>Puede abrir la Predicción en una pestaña separada haciendo clic en su título en una alerta.</li>
+          <li>
+            Además, puede abrir inmediatamente la Predicción en la ventana emergente justo encima del reproductor de
+            vídeo haciendo clic en el botón "Abrir Predicción".
+          </li>
+        </ul>
+
+        <h4 id="events_predict-result">Resultado de la Predicción</h4>
+        <ul>
+          <li>Una alerta se mostrará al final de una Predicción en la que hayas participado.</li>
+          <li>Esta alerta contiene la cantidad de Puntos que hayas perdido o ganado.</li>
+          <li>
+            Puede abrir el menú de recompensas en una pestaña separada con un clic en el número de Puntos en una alerta.
+          </li>
+          <li>Esta alerta aparecerá si la Predicción ha sido cancelada.</li>
+        </ul>
+
+        <h4 id="events_raid">Raideo del Canal</h4>
+        <ul>
+          <li>Cuando un canal es Raideado, se mostrará una alerta.</li>
+          <li>
+            Esta alerta contiene el nombre del canal Raideado. Haciendo clic en el nombre, el canal puede ser abierto en
+            una nueva pestaña.
+          </li>
+          <li>
+            Esta alerta también indicará si se canceló la transición al canal (la función para cancelar la transición
+            está disponible en los ajustes de la extensión).
+          </li>
+        </ul>
+
+        <h4 id="events_reload">Recargar Página</h4>
+        <ul>
+          <li>Si la extensión obliga a recargar una página, se mostrará una alerta.</li>
+          <li>La alerta contiene la dirección de la página recargada y la razón de la recarga.</li>
+          <li>
+            La razón de la recarga puede ser uno de
+            <a href="#errors">los errores</a>
+            con Twitch.
+          </li>
+          <li>Puede desactivar inmediatamente la recarga automática haciendo clic en el botón de esta alerta.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 id="errors">Información Sobre Errores</h3>
+
+        <h4 id="errors_playback">Error de Reproducción de la Transmisión</h4>
+        <p>
+          Este error se producirá si la extensión detecta un congelamiento o errores del reproductor de Twitch mientras
+          haces peticiones al servidor de Twitch.
+        </p>
+        <p>
+          La razón puede ser la inestable Internet o su interrupción por su parte. En este caso:
+          <b>comprueba la conexión a Internet</b>
+          /
+          <b>apaga el modo "Baja Latencia" del reproductor</b>.
+        </p>
+        <p>
+          Además, la razón puede ser la degradación temporal de los servidores de Twitch. En este caso:
+          <b>comprueba el estado</b>
+          en el
+          <a href="https://twitter.com/TwitchSupport" target="_blank">Twitter del Soporte de Twitch</a>
+          /
+          <b>solo espera</b>.
+        </p>
+
+        <h4 id="errors_integrity">Bloqueo de Reclamación de Recompensa</h4>
+        <p>
+          Este error ocurrirá si la extensión determina que no es posible reclamar una recompensa, como puntos de Canal
+          adicionales o un Drop.
+        </p>
+        <p>
+          Este error ocurre cuando el sistema anti-bot de Twitch pone tu dirección IP en un shadowban. Puede haber
+          muchas razones para ello, pero las principales son su cambio de IP o un gran número de peticiones de la misma.
+          Los cambios de IP pueden ocurrir si utiliza una VPN, también algunos ISP pueden cambiar su IP de forma
+          regular. Un gran número de peticiones pueden ocurrir si hay muchos ordenadores (con Twitch abierto) en su IP,
+          algunos ISP conectan muchos hogares a una IP pública.
+        </p>
+        <p class="important">
+          ¡La extensión en sí misma no puede ser la causa de este error! Por el momento, este shadowban no afecta a tu
+          cuenta y se elimina automáticamente después de un tiempo.
+        </p>
+        <p>
+          En caso de este error:
+          <b>espere un par de horas</b>
+          /
+          <b>cambie su dirección IP</b>
+          /
+          <b>vuelva a iniciar sesión en Twitch</b>
+          /
+          <b>limpiar caché y cookies del navegador</b>, <b>escribe al soporte de Twitch</b>.
+        </p>
+      </section>
+    </main>
+
+    <div class="hidden" id="googleTranslateElement"></div>
+  </body>
+</html>

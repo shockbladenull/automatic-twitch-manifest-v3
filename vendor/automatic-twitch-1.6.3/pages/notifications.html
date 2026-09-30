@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title class="notranslate" data-i18n>extension_title+—+title_notifications</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="/pages/notifications.css" />
+    <script type="text/javascript" src="/js/deps/not-jquery-noajax.min.js"></script>
+    <script type="text/javascript" src="/js/deps/ext-storage-manager.min.js"></script>
+    <script type="text/javascript" src="/js/deps/ebnull-notifier.min.js"></script>
+    <script type="text/javascript" src="/pages/notifications.js"></script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=initTranslate"
+      async
+    ></script>
+  </head>
+
+  <body class="wrapper">
+    <header>
+      <div class="header-wrapper notranslate">
+        <h1 class="title" data-i18n>notifs_title</h1>
+        <div class="ext-title">
+          <div data-i18n>extension_title</div>
+          <div
+            class="balloon balloon_tooltip balloon_right ml hidden"
+            id="translateGoogle"
+            data-balloon
+            data-balloon-tooltip
+          >
+            <button class="translate-google" id="translateGoogleBtn"></button>
+            <div class="balloon__content" data-balloon-content>
+              <div class="balloon__text" id="translateGoogleHint"></div>
+              <button class="balloon__close" data-balloon-action></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="notifs notifs_empty">
+        <span data-i18n>notifs_none</span>
+      </section>
+
+      <section class="notifs notifs_error">
+        <span data-i18n>notifs_error</span>
+      </section>
+
+      <section class="notifs notifs_important" id="notifsImportant"></section>
+
+      <section class="notifs notifs_normal" id="notifsNormal"></section>
+    </main>
+
+    <div class="hidden" id="googleTranslateElement"></div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducible problem with the migration tool or local extension.
+body:
+  - type: markdown
+    attributes:
+      value: Do not include cookies, authentication headers, integrity tokens, or the original extension package.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Chrome version, local extension version, and Node.js version if this is a build problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: For playback problems, include mute state and how the tab became hidden.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      description: Remove all private data before sharing.

@@ -1,0 +1,467 @@
+{
+   "alert_claimedMany": {
+      "message": "已領取"
+   },
+   "alert_claimedOne": {
+      "message": "已領取"
+   },
+   "alert_criticalLuck": {
+      "message": "運氣真好"
+   },
+   "alert_disableAll": {
+      "message": "停用所有彈出式提醒"
+   },
+   "alert_disableThis": {
+      "message": "停用這類事件的提醒"
+   },
+   "alert_drop": {
+      "message": "1 個掉寶"
+   },
+   "alert_eventVar": {
+      "message": "在 Twitch 上"
+   },
+   "alert_extAutomation": {
+      "message": "擴充功能自動化"
+   },
+   "alert_forChannel": {
+      "message": "來自頻道："
+   },
+   "alert_forGame": {
+      "message": "來自遊戲："
+   },
+   "alert_learnMore": {
+      "message": "了解更多"
+   },
+   "alert_moment": {
+      "message": "1 段重要時刻"
+   },
+   "alert_newNotification": {
+      "message": "您有一則新的通知："
+   },
+   "alert_newNotificationImportant": {
+      "message": "您收到了一則重要通知："
+   },
+   "alert_openPrediction": {
+      "message": "開啟賽況預測"
+   },
+   "alert_points": {
+      "message": "忠誠點數"
+   },
+   "alert_pointsVar": {
+      "message": "忠誠點數"
+   },
+   "alert_predictionsDescrLose": {
+      "message": "您 \u003Cb class=\"_ATBE_color _ATBE_color_fail\">輸了\u003C/b>，失去了："
+   },
+   "alert_predictionsDescrOutcomes": {
+      "message": "可能的結果："
+   },
+   "alert_predictionsDescrRefund": {
+      "message": "賽況預測 \u003Cb class=\"_ATBE_color\">已取消\u003C/b>，已退還："
+   },
+   "alert_predictionsDescrStart": {
+      "message": "賽況預測已發起："
+   },
+   "alert_predictionsDescrWin": {
+      "message": "您 \u003Cb class=\"_ATBE_color _ATBE_color_success\">贏了\u003C/b>，賺取了："
+   },
+   "alert_predictionsResult": {
+      "message": "賽況預測結果"
+   },
+   "alert_predictionsStart": {
+      "message": "賽況預測已開始"
+   },
+   "alert_predictionsVar": {
+      "message": "賽況預測"
+   },
+   "alert_raids": {
+      "message": "揪團已開始"
+   },
+   "alert_raidsCanceled": {
+      "message": "已取消前往頻道"
+   },
+   "alert_raidsDescr": {
+      "message": "您參與了這個頻道的揪團："
+   },
+   "alert_reloadDisable": {
+      "message": "停用這類重新載入"
+   },
+   "alert_reloads": {
+      "message": "重新整理頁面"
+   },
+   "alert_reloadsDescr": {
+      "message": "擴充功能重新整理了這個頁面："
+   },
+   "alert_reloadsDescrIntegrityFail": {
+      "message": "領取獎勵時受阻"
+   },
+   "alert_reloadsDescrPlaybackError": {
+      "message": "播放視訊串流時發生錯誤"
+   },
+   "alert_reloadsDescrReason": {
+      "message": "原因："
+   },
+   "alert_winFactor": {
+      "message": "贏得賭注倍數："
+   },
+   "balloon_continue": {
+      "message": "確定要繼續？"
+   },
+   "balloon_no": {
+      "message": "否"
+   },
+   "balloon_ok": {
+      "message": "OK"
+   },
+   "balloon_resetAll": {
+      "message": "您將會 \u003Cb>重設所有\u003C/b> 擴充功能的設定、紀錄及統計資料。"
+   },
+   "balloon_resetStats": {
+      "message": "您將會 \u003Cb>重設所有\u003C/b> 擴充功能的紀錄及統計資料。"
+   },
+   "balloon_yes": {
+      "message": "是"
+   },
+   "contributors_title": {
+      "message": "貢獻者"
+   },
+   "donate_card": {
+      "message": "金融卡"
+   },
+   "donate_info": {
+      "message": "本擴充功能完全免費，且不會收集或販賣使用者的個人資料，歡迎您贊助激勵我們的辛苦成果。感謝您！"
+   },
+   "extension_descr": {
+      "message": "本擴充功能可以在 Twitch 上自動領取掉寶、忠誠點數及重要時刻，同時還有許多額外的功能！"
+   },
+   "extension_lang": {
+      "message": "zh_TW"
+   },
+   "extension_name": {
+      "message": "Twitch 自動化插件：掉寶、重要時刻及忠誠點數"
+   },
+   "extension_title": {
+      "message": "Twitch 自動化插件"
+   },
+   "extension_translateHint": {
+      "message": "將頁面翻譯成您的語言（使用 Google 翻譯）"
+   },
+   "filter_all": {
+      "message": "全部"
+   },
+   "filter_empty": {
+      "message": "還沒有任何內容"
+   },
+   "filter_show": {
+      "message": "顯示："
+   },
+   "help_title": {
+      "message": "幫助"
+   },
+   "hint_autoReload": {
+      "message": "實驗性功能，在特定情形下可能無法正常運作。建議在網路不穩時關閉。"
+   },
+   "hint_autoStart": {
+      "message": "為了功能的運作，擴充功能會在頁面載入時聚焦該頁面大約 1 秒，在此期間畫面可能會閃爍。"
+   },
+   "hint_cancelRaid": {
+      "message": "揪團頁面會載入一小段時間後，再返回原頻道。如此一來便可領取因參與揪團而獲得的額外忠誠點數。"
+   },
+   "hint_changeIcon": {
+      "message": "只會將直播中的頁面標示成紅色圖示，並不會更改重播影片、推薦頻道及被揪團頻道的分頁圖示。"
+   },
+   "hint_integrityReload": {
+      "message": "Twitch 可能發生了錯誤，或突然阻止某些使用者行為。當擴充功能偵測到問題時，將會重新整理頁面並嘗試修復。"
+   },
+   "hint_note": {
+      "message": "備註"
+   },
+   "hint_notificationAlert": {
+      "message": "即便關閉，仍會顯示重要通知。"
+   },
+   "hint_preventPause": {
+      "message": "為了防止瀏覽器暫停影片播放器，本擴充功能會將短暫解除靜音狀態。這是實驗性功能，某些情形下可能無法正常運作。"
+   },
+   "intro_additional": {
+      "message": "別忘了查看一下「贊助」區域。您可以在「幫助」頁面中閱讀更多關於本擴充功能的詳細資訊。"
+   },
+   "intro_automates": {
+      "message": "本擴充功能可以自動將瀏覽器設為焦點（最小化其他程式）、啟用分頁、重新整理頁面、短暫使播放器解除靜音，以及顯示通知。您可以在「擴充功能設定」中停用這些功能。"
+   },
+   "intro_background": {
+      "message": "擴充功能不需依靠介面，可在背景自動執行。您還是能收到新掉寶、重要時刻或獲取忠誠點數領取的通知，不必費力親自收集！"
+   },
+   "intro_basics": {
+      "message": "本擴充功能會自動領取您的掉寶、頻道忠誠點數及重要時刻。您只需觀看您最喜歡的直播，不需要進行任何設定！"
+   },
+   "intro_close": {
+      "message": "關閉"
+   },
+   "intro_events": {
+      "message": "本擴充功能提供了數種可自訂的提醒，例如揪團及賽況預測。同時還會保留近期事件的歷史紀錄。"
+   },
+   "intro_hello": {
+      "message": "您好，感謝您安裝本擴充功能 👋"
+   },
+   "intro_openHelp": {
+      "message": "打開幫助"
+   },
+   "intro_sets": {
+      "message": "本擴充功能還提供大量的功能與設定，例如在播放器發生錯誤時自動重新整理、滑鼠停留於頻道選單上方時顯示直播預覽、可自由設定各種通知提醒，還有著更多的功能。"
+   },
+   "intro_stats": {
+      "message": "您可以隨時查看領取紀錄，以及掉寶、忠誠點數及重要時刻領取的總數。請注意這只會記錄由擴充功能自身領取的次數，且不是 Twitch 自動頒發給您的獎勵（例如參與揪團所獲得的忠誠點數）。"
+   },
+   "links_reviews": {
+      "message": "評論"
+   },
+   "links_support": {
+      "message": "支援"
+   },
+   "menu_alerts": {
+      "message": "提醒設定"
+   },
+   "menu_claims": {
+      "message": "領取紀錄"
+   },
+   "menu_donate": {
+      "message": "贊助"
+   },
+   "menu_events": {
+      "message": "事件紀錄"
+   },
+   "menu_settings": {
+      "message": "擴充功能設定"
+   },
+   "menu_support": {
+      "message": "支援"
+   },
+   "notifs_error": {
+      "message": "無法載入通知"
+   },
+   "notifs_none": {
+      "message": "沒有通知"
+   },
+   "notifs_open": {
+      "message": "開啟通知"
+   },
+   "notifs_read": {
+      "message": "無未讀通知"
+   },
+   "notifs_title": {
+      "message": "通知"
+   },
+   "notifs_unread": {
+      "message": "未讀訊息"
+   },
+   "offer_patreonText": {
+      "message": "前往贊助擴充功能的持續開發"
+   },
+   "offer_patreonTitle": {
+      "message": "哇嗚，已領取超過 50 個掉寶了！"
+   },
+   "offer_rateLink": {
+      "message": "評個分吧"
+   },
+   "offer_rateText": {
+      "message": "並分享給您的朋友們！"
+   },
+   "offer_rateTitle": {
+      "message": "您喜歡本擴充功能嗎？"
+   },
+   "patrons_title": {
+      "message": "贊助者（patreon.com）"
+   },
+   "setting_autoReload": {
+      "message": "在播放出現錯誤時，自動重新整理播放器或頻道頁面"
+   },
+   "setting_autoStart": {
+      "message": "在最小化或隱藏的分頁中自動開始播放"
+   },
+   "setting_cancelRaid": {
+      "message": "避免前往被揪團的頻道"
+   },
+   "setting_changeIcon": {
+      "message": "改變正在直播的 Twitch 分頁圖示"
+   },
+   "setting_claimDrops": {
+      "message": "自動領取掉寶"
+   },
+   "setting_claimMoments": {
+      "message": "自動領取重要時刻"
+   },
+   "setting_claimPoints": {
+      "message": "自動領取頻道忠誠點數"
+   },
+   "setting_clickPause": {
+      "message": "在播放器上按住左鍵以停止播放"
+   },
+   "setting_enableNative": {
+      "message": "啟用作業系統通知"
+   },
+   "setting_enableSound": {
+      "message": "開啟聲音提醒"
+   },
+   "setting_enableVisual": {
+      "message": "允許彈出式提醒出現在 Twitch 網頁上"
+   },
+   "setting_hideExtensions": {
+      "message": "隱藏播放器上的實況互動元件懸浮窗"
+   },
+   "setting_integrityReload": {
+      "message": "在領取獎勵時出現錯誤時，自動重新整理頁面"
+   },
+   "setting_notificationAlert": {
+      "message": "在收到新通知時，顯示作業系統通知"
+   },
+   "setting_preventDiscard": {
+      "message": "避免瀏覽器停用不活動的 Twitch 分頁"
+   },
+   "setting_preventPause": {
+      "message": "防止在隱藏分頁中的直播被停止播放"
+   },
+   "setting_resetAll": {
+      "message": "完全重置本擴充功能"
+   },
+   "setting_resetStats": {
+      "message": "重置統計資料"
+   },
+   "setting_showPreviews": {
+      "message": "在游標停留於選單中的頻道上時，顯示預覽圖"
+   },
+   "setting_soundVolume": {
+      "message": "聲音提醒音量"
+   },
+   "setting_testDrops": {
+      "message": "測試領取掉寶時的提醒"
+   },
+   "setting_testMoments": {
+      "message": "測試領取重要時刻時的提醒"
+   },
+   "setting_testPoints": {
+      "message": "測試領取忠誠點數時的提醒"
+   },
+   "setting_testPredictionsResult": {
+      "message": "測試賽況預測結束時的提醒"
+   },
+   "setting_testPredictionsStart": {
+      "message": "測試賽況預測開始時的提醒"
+   },
+   "setting_testRaids": {
+      "message": "測試揪團開始時的提醒"
+   },
+   "setting_testReloads": {
+      "message": "測試重新整理網頁時的提醒"
+   },
+   "setting_visualDuration": {
+      "message": "彈出式提醒持續時間"
+   },
+   "settings_disable": {
+      "message": "關閉"
+   },
+   "settings_enable": {
+      "message": "開啟"
+   },
+   "stat_claims": {
+      "message": "透過擴充功能領取"
+   },
+   "stat_date": {
+      "message": "上次領取"
+   },
+   "stat_disabled": {
+      "message": "自動領取已關閉"
+   },
+   "stat_never": {
+      "message": "從未獲得"
+   },
+   "stat_now": {
+      "message": "剛剛"
+   },
+   "stat_recent": {
+      "message": "幾秒鐘前"
+   },
+   "stat_unknown": {
+      "message": "未知"
+   },
+   "status_disabled": {
+      "message": "已停用擴充功能"
+   },
+   "status_enabled": {
+      "message": "已啟用擴充功能"
+   },
+   "status_notifications": {
+      "message": "您有新的通知"
+   },
+   "title_alertDrops": {
+      "message": "領取掉寶時"
+   },
+   "title_alertMoments": {
+      "message": "領取重要時刻時"
+   },
+   "title_alertPoints": {
+      "message": "領取忠誠點數時"
+   },
+   "title_alertPredictionsResult": {
+      "message": "賽況預測（有參與的）結果出爐時"
+   },
+   "title_alertPredictionsStart": {
+      "message": "賽況預測開始時"
+   },
+   "title_alertRaids": {
+      "message": "揪團開始時"
+   },
+   "title_alertReloads": {
+      "message": "頁面重新整理時"
+   },
+   "title_alerts": {
+      "message": "提醒設定"
+   },
+   "title_alertsClaims": {
+      "message": "物品領取"
+   },
+   "title_alertsEvents": {
+      "message": "事件"
+   },
+   "title_claims": {
+      "message": "最近領取"
+   },
+   "title_donate": {
+      "message": "贊助方式"
+   },
+   "title_events": {
+      "message": "最近事件"
+   },
+   "title_help": {
+      "message": "幫助"
+   },
+   "title_intro": {
+      "message": "歡迎"
+   },
+   "title_notifications": {
+      "message": "通知"
+   },
+   "title_settings": {
+      "message": "一般設定"
+   },
+   "translators_title": {
+      "message": "志願翻譯者"
+   },
+   "type_drops": {
+      "message": "掉寶"
+   },
+   "type_moments": {
+      "message": "重要時刻"
+   },
+   "type_points": {
+      "message": "頻道忠誠點數"
+   },
+   "type_predictions": {
+      "message": "賽況預測"
+   },
+   "type_raids": {
+      "message": "揪團"
+   },
+   "type_reloads": {
+      "message": "重新整理"
+   }
+}

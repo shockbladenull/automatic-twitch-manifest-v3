@@ -1,0 +1,467 @@
+{
+   "alert_claimedMany": {
+      "message": "odebrano"
+   },
+   "alert_claimedOne": {
+      "message": "odebrano"
+   },
+   "alert_criticalLuck": {
+      "message": "Krytyczne szczęście"
+   },
+   "alert_disableAll": {
+      "message": "Wyłącz wszystkie wyskakujące alerty"
+   },
+   "alert_disableThis": {
+      "message": "Wyłącz alerty dla takich wydarzeń"
+   },
+   "alert_drop": {
+      "message": "1 Drop"
+   },
+   "alert_eventVar": {
+      "message": "na Twitchu"
+   },
+   "alert_extAutomation": {
+      "message": "Automatyzacja rozszerzenia"
+   },
+   "alert_forChannel": {
+      "message": "Na kanale"
+   },
+   "alert_forGame": {
+      "message": "Do gry"
+   },
+   "alert_learnMore": {
+      "message": "Dowiedz się więcej o tym"
+   },
+   "alert_moment": {
+      "message": "1 Moment"
+   },
+   "alert_newNotification": {
+      "message": "Otrzymałeś nowe powiadomienie:"
+   },
+   "alert_newNotificationImportant": {
+      "message": "Otrzymałeś ważne powiadomienie:"
+   },
+   "alert_openPrediction": {
+      "message": "Otwarte Przewidywanie"
+   },
+   "alert_points": {
+      "message": "Punkty Kanału"
+   },
+   "alert_pointsVar": {
+      "message": "Punkty"
+   },
+   "alert_predictionsDescrLose": {
+      "message": "\u003Cb class=\"_ATBE_color _ATBE_color_fail\">Przegrałeś\u003C/b>, stracono:"
+   },
+   "alert_predictionsDescrOutcomes": {
+      "message": "Możliwe rezultaty:"
+   },
+   "alert_predictionsDescrRefund": {
+      "message": "Przewidywanie \u003Cb class=\"_ATBE_color\">anulowane\u003C/b>, zwrócono:"
+   },
+   "alert_predictionsDescrStart": {
+      "message": "Przewidywanie zostało uruchomione:"
+   },
+   "alert_predictionsDescrWin": {
+      "message": "\u003Cb class=\"_ATBE_color _ATBE_color_success\">Wygrałeś\u003C/b>, zdobyto:"
+   },
+   "alert_predictionsResult": {
+      "message": "Wynik Przewidywania"
+   },
+   "alert_predictionsStart": {
+      "message": "Przewidywanie rozpoczęte"
+   },
+   "alert_predictionsVar": {
+      "message": "Przewidywanie"
+   },
+   "alert_raids": {
+      "message": "Dokonano Raidu"
+   },
+   "alert_raidsCanceled": {
+      "message": "Przeniesienie na kanał zostało anulowane"
+   },
+   "alert_raidsDescr": {
+      "message": "Wziąłeś udział w Raidzie na kanale:"
+   },
+   "alert_reloadDisable": {
+      "message": "Wyłącz takie odświeżenia"
+   },
+   "alert_reloads": {
+      "message": "Odświeżenie strony"
+   },
+   "alert_reloadsDescr": {
+      "message": "Rozszerzenie odświeżyło stronę:"
+   },
+   "alert_reloadsDescrIntegrityFail": {
+      "message": "Blokada odbierania nagród"
+   },
+   "alert_reloadsDescrPlaybackError": {
+      "message": "Błąd odtwarzania streama"
+   },
+   "alert_reloadsDescrReason": {
+      "message": "Powód:"
+   },
+   "alert_winFactor": {
+      "message": "Zakład jest pomnożony:"
+   },
+   "balloon_continue": {
+      "message": "Kontynuować?"
+   },
+   "balloon_no": {
+      "message": "Nie"
+   },
+   "balloon_ok": {
+      "message": "OK"
+   },
+   "balloon_resetAll": {
+      "message": "\u003Cb>Zresetujesz wszystkie\u003C/b> ustawienia, historię i statystyki rozszerzenia."
+   },
+   "balloon_resetStats": {
+      "message": "\u003Cb>Zresetujesz całą\u003C/b> historię i statystyki rozszerzenia."
+   },
+   "balloon_yes": {
+      "message": "Tak"
+   },
+   "contributors_title": {
+      "message": "Kontrybutorzy"
+   },
+   "donate_card": {
+      "message": "Karta płatnicza"
+   },
+   "donate_info": {
+      "message": "Ponieważ to rozszerzenie jest darmowe i nie zbieram ani nie sprzedaję Twoich danych osobowych, to zachęcam do przekazania donacji, aby zapewnić mi motywację do ciężkiej pracy. Dziękuję!"
+   },
+   "extension_descr": {
+      "message": "Rozszerzenie automatycznie odbiera Dropy, Punkty Kanału i Momenty na Twitchu, a także dodaje wiele innych funkcji!"
+   },
+   "extension_lang": {
+      "message": "pl"
+   },
+   "extension_name": {
+      "message": "Automatyczny Twitch: Dropy, Momenty i Punkty"
+   },
+   "extension_title": {
+      "message": "Automatyczny Twitch"
+   },
+   "extension_translateHint": {
+      "message": "Przetłumacz stronę na Twój język (tłumacz Google)"
+   },
+   "filter_all": {
+      "message": "Wszystko"
+   },
+   "filter_empty": {
+      "message": "Nic tu jeszcze nie ma"
+   },
+   "filter_show": {
+      "message": "Pokaż:"
+   },
+   "help_title": {
+      "message": "Pomoc"
+   },
+   "hint_autoReload": {
+      "message": "Funkcja eksperymentalna, może nie działać poprawnie w niektórych przypadkach. Zaleca się wyłączenie jej w przypadku niestabilnego Internetu."
+   },
+   "hint_autoStart": {
+      "message": "Żeby to osiągnąć, rozszerzenie skoncentruje odpowiednie karty na ułamek sekundy, kiedy są ładowane. Możesz zobaczyć wtedy migotanie."
+   },
+   "hint_cancelRaid": {
+      "message": "Strona Raidu załaduje się na krótko i powróci, dzięki czemu otrzymasz bonus Punktów za udział w Raidzie."
+   },
+   "hint_changeIcon": {
+      "message": "Czerwona ikona zasygnalizuje tylko aktywny stream, nie zmieni się dla kart z odtwarzanymi filmami, streamami hostowanych i raidowanych kanałów."
+   },
+   "hint_integrityReload": {
+      "message": "Twitch może napotkać błędy lub może nagle zablokować niektóre działania użytkownika. Gdy rozszerzenie wykryje taki problem, odświeży stronę, aby spróbować go naprawić."
+   },
+   "hint_note": {
+      "message": "Uwaga"
+   },
+   "hint_notificationAlert": {
+      "message": "Alerty dla ważnych powiadomień będą zawsze wyświetlane."
+   },
+   "hint_preventPause": {
+      "message": "Aby zapobiec pauzowaniu odtwarzacza przez przeglądarkę, rozszerzenie wyłączy wyciszenie na sekundę. Funkcja eksperymentalna; może w niektórych przypadkach nie działać poprawnie."
+   },
+   "intro_additional": {
+      "message": "Nie zapomnij sprawdzić sekcji \"Donacje\". Więcej informacji na temat niuansów tego rozszerzenia można znaleźć na stronie Pomocy."
+   },
+   "intro_automates": {
+      "message": "Rozszerzenie może automatycznie skupić się na przeglądarce (minimalizując inne programy), aktywować karty, odświeżyć strony, tymczasowo wyłączyć wyciszenie odtwarzacza i pokazać powiadomienia. Możesz to wyłączyć w sekcji \"Ustawienia Rozszerzenia\"."
+   },
+   "intro_background": {
+      "message": "Rozszerzenie wykonuje swoje działania w tle bez polegania na interfejsie, więc nadal możesz widzieć powiadomienia o nowych Dropach, Momentach lub przyciski odbioru dodatkowych Punktów. Nie ma potrzeby w nie klikać!"
+   },
+   "intro_basics": {
+      "message": "To rozszerzenie automatycznie odbierze twoje Dropy, Punkty Kanału i Momenty. Po prostu oglądaj swoje ulubione streamy, nie musisz niczego ustawiać!"
+   },
+   "intro_close": {
+      "message": "Zamknij"
+   },
+   "intro_events": {
+      "message": "Rozszerzenie zapewnia konfigurowalne alerty dla niektórych wydarzeń, takich jak Raidy i Przewidywania. Zachowuje również historię ostatnich wydarzeń."
+   },
+   "intro_hello": {
+      "message": "Witaj i dzięki za zainstalowanie👋"
+   },
+   "intro_openHelp": {
+      "message": "Otwórz Pomoc"
+   },
+   "intro_sets": {
+      "message": "Rozszerzenie zapewnia również duży zestaw dodatkowych funkcji i ustawień, takich jak automatyczne odświeżenie odtwarzacza przy błędach, miniaturka streama wyświetlana podczas podświetlania kanałów w menu, elastyczne ustawienia dla wszystkich typów alertów i wiele więcej."
+   },
+   "intro_stats": {
+      "message": "Zawsze możesz sprawdzić historię odebrań, jak również całkowitą liczbę odebranych Dropów, Punktów i Momentów. Pamiętaj, że tylko to, co zostało odebrane przez samo rozszerzenie, znajduje się tutaj, a nie przyznane automatycznie przez Twitch (na przykład Punkty Kanału za udział w Raidzie)."
+   },
+   "links_reviews": {
+      "message": "Recenzje"
+   },
+   "links_support": {
+      "message": "Wsparcie"
+   },
+   "menu_alerts": {
+      "message": "Ustawienia Alertów"
+   },
+   "menu_claims": {
+      "message": "Historia Odbiorów"
+   },
+   "menu_donate": {
+      "message": "Wesprzyj nas"
+   },
+   "menu_events": {
+      "message": "Historia Wydarzeń"
+   },
+   "menu_settings": {
+      "message": "Ustawienia"
+   },
+   "menu_support": {
+      "message": "Wsparcie na"
+   },
+   "notifs_error": {
+      "message": "Nie udało się odebrać powiadomień"
+   },
+   "notifs_none": {
+      "message": "Brak powiadomień"
+   },
+   "notifs_open": {
+      "message": "Otwórz powiadomienia"
+   },
+   "notifs_read": {
+      "message": "Wszystko przeczytane"
+   },
+   "notifs_title": {
+      "message": "Powiadomienia"
+   },
+   "notifs_unread": {
+      "message": "nieprzeczytane"
+   },
+   "offer_patreonText": {
+      "message": "Wspomóż rozwój rozszerzenia na"
+   },
+   "offer_patreonTitle": {
+      "message": "Wow, już ponad 50 odebranych Dropów!"
+   },
+   "offer_rateLink": {
+      "message": "Oceń je"
+   },
+   "offer_rateText": {
+      "message": "i powiedz o nim znajomym!"
+   },
+   "offer_rateTitle": {
+      "message": "Podoba Ci się rozszerzenie?"
+   },
+   "patrons_title": {
+      "message": "Patroni (patreon.com)"
+   },
+   "setting_autoReload": {
+      "message": "Automatycznie odśwież stronę odtwarzacza lub kanału przy błędach odtwarzania"
+   },
+   "setting_autoStart": {
+      "message": "Automatycznie uruchom odtwarzanie w zakładkach zminimalizowanych lub ukrytych"
+   },
+   "setting_cancelRaid": {
+      "message": "Zapobiegaj przechodzeniu na Raidowany kanał"
+   },
+   "setting_changeIcon": {
+      "message": "Zmień ikonę dla kart Twitch, które mają odtwarzanie na żywo"
+   },
+   "setting_claimDrops": {
+      "message": "Automatycznie przyjmuj Dropy"
+   },
+   "setting_claimMoments": {
+      "message": "Automatycznie przyjmuj Momenty"
+   },
+   "setting_claimPoints": {
+      "message": "Automatycznie przyjmuj Punkty Kanału"
+   },
+   "setting_clickPause": {
+      "message": "Zatrzymaj odtwarzanie poprzez przytrzymanie lewego przycisku myszy na odtwarzaczu"
+   },
+   "setting_enableNative": {
+      "message": "Włącz alert systemowy"
+   },
+   "setting_enableSound": {
+      "message": "Włącz dźwięk alertu"
+   },
+   "setting_enableVisual": {
+      "message": "Włącz okienka alertu na stronie Twitch"
+   },
+   "setting_hideExtensions": {
+      "message": "Ukryj rozszerzenia Twitch nakładane na odtwarzacz"
+   },
+   "setting_integrityReload": {
+      "message": "Automatycznie odświeżaj strony, jeśli występują problemy z odbieraniem nagród"
+   },
+   "setting_notificationAlert": {
+      "message": "Pokaż alert systemowy, kiedy otrzymujesz nowe powiadomienie"
+   },
+   "setting_preventDiscard": {
+      "message": "Zapobiegaj auto-odrzucaniu przez przeglądarkę nieaktywnych kart Twitch"
+   },
+   "setting_preventPause": {
+      "message": "Zapobiegaj zatrzymaniu odtwarzania streama na kartach ukrytych"
+   },
+   "setting_resetAll": {
+      "message": "Zresetuj całe rozszerzenie"
+   },
+   "setting_resetStats": {
+      "message": "Zresetuj statystyki"
+   },
+   "setting_showPreviews": {
+      "message": "Pokaż podglądowe obrazki przy podświetlaniu kanałów w menu"
+   },
+   "setting_soundVolume": {
+      "message": "Głośność dźwięku alertu"
+   },
+   "setting_testDrops": {
+      "message": "Testuj alert Dropów"
+   },
+   "setting_testMoments": {
+      "message": "Testuj alert Momentów"
+   },
+   "setting_testPoints": {
+      "message": "Testuj alert Puntów"
+   },
+   "setting_testPredictionsResult": {
+      "message": "Testuj alert zakończenia Przewidywania"
+   },
+   "setting_testPredictionsStart": {
+      "message": "Testuj alert rozpoczęcia Przewidywania"
+   },
+   "setting_testRaids": {
+      "message": "Testuj alert Raidu"
+   },
+   "setting_testReloads": {
+      "message": "Testuj alert dla odświeżenia"
+   },
+   "setting_visualDuration": {
+      "message": "Czas wyświetlania alertu"
+   },
+   "settings_disable": {
+      "message": "Wył."
+   },
+   "settings_enable": {
+      "message": "Wł."
+   },
+   "stat_claims": {
+      "message": "Odebrane przez rozszerzenie"
+   },
+   "stat_date": {
+      "message": "Ostatnio odebrane"
+   },
+   "stat_disabled": {
+      "message": "automatyczny odbiór jest wyłączony"
+   },
+   "stat_never": {
+      "message": "Nigdy"
+   },
+   "stat_now": {
+      "message": "W tej chwili"
+   },
+   "stat_recent": {
+      "message": "Kilka sekund temu"
+   },
+   "stat_unknown": {
+      "message": "Nieznane"
+   },
+   "status_disabled": {
+      "message": "Rozszerzenie wyłączone"
+   },
+   "status_enabled": {
+      "message": "Rozszerzenie włączone"
+   },
+   "status_notifications": {
+      "message": "Masz nowe powiadomienia"
+   },
+   "title_alertDrops": {
+      "message": "Przy odbieraniu Dropów"
+   },
+   "title_alertMoments": {
+      "message": "Przy odbieraniu Momentów"
+   },
+   "title_alertPoints": {
+      "message": "Przy odbieraniu Punktów Kanału"
+   },
+   "title_alertPredictionsResult": {
+      "message": "Przy wynikach Przewidywania (w którym bierzesz udział)"
+   },
+   "title_alertPredictionsStart": {
+      "message": "Gdy zaczyna się Przewidywanie"
+   },
+   "title_alertRaids": {
+      "message": "Gdy zaczyna się Raid"
+   },
+   "title_alertReloads": {
+      "message": "Kiedy strona jest odświeżana"
+   },
+   "title_alerts": {
+      "message": "Ustawienia Alertów"
+   },
+   "title_alertsClaims": {
+      "message": "Odbiory"
+   },
+   "title_alertsEvents": {
+      "message": "Wydarzenia"
+   },
+   "title_claims": {
+      "message": "Ostatnie Odbiory"
+   },
+   "title_donate": {
+      "message": "Sposoby Donacji"
+   },
+   "title_events": {
+      "message": "Ostatnie Wydarzenia"
+   },
+   "title_help": {
+      "message": "Pomoc"
+   },
+   "title_intro": {
+      "message": "Witaj"
+   },
+   "title_notifications": {
+      "message": "Powiadomienia"
+   },
+   "title_settings": {
+      "message": "Ogólne Ustawienia"
+   },
+   "translators_title": {
+      "message": "Tłumacze ochotnicy"
+   },
+   "type_drops": {
+      "message": "Dropy"
+   },
+   "type_moments": {
+      "message": "Momenty"
+   },
+   "type_points": {
+      "message": "Punkty Kanału"
+   },
+   "type_predictions": {
+      "message": "Przewidywania"
+   },
+   "type_raids": {
+      "message": "Raidy"
+   },
+   "type_reloads": {
+      "message": "Odświeżania"
+   }
+}
